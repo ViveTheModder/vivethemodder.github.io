@@ -1,36 +1,124 @@
 body {
   background-color: rgb(54, 57, 63);
   font-family: Tahoma;
+  color: white;
 }
 
-.header-img {
+img {
   width: 100%;
+  /* adjust image size based on the window size */
   object-fit: cover;
   object-position: bottom;
 }
+.preview {
+  width: 95%;
+}
 
+/* header styles */
 .header-txt {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-	
 }
-
 .header {
   position: relative;
   text-align: center;
-  color: white;
 }
-
 .h1-txt {
   font-size: 3.5vw;
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke: 1.5px #10f3ca;
 }
-
 h2 {
   font-size: 1.2vw;
   font-weight: normal;
   -webkit-text-fill-color: #3bfcf9;
+}
+
+/* zebra stripes for table */
+tr:nth-child(even) {
+  background-color: #8a3b86;
+}
+
+tr:nth-child(odd) {
+  background-color: #b04081;
+}
+th {
+  background-color: #68095a;
+}
+
+/* width adjustments for each column of the table*/
+td:nth-child(1) {
+	width: 12%;
+}
+td:nth-child(2) {
+	width: 12%;
+}
+td:nth-child(3) {
+	width: 18%;
+}
+td:nth-child(4) {
+	width: 46%;
+	text-align: left;
+}
+td:nth-child(5) {
+	width: 12%;
+}
+
+/* general table styles */
+table, th, td {
+  border: 2px solid #68095a;
+  border-collapse: collapse;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+table {
+  width: 98%;
+  overflow-x: auto;
+}
+
+/* basic tooltip (thanks w3schools) */
+.tooltip {
+  position: relative;
+}
+.tooltip .tooltip-content {
+  visibility: hidden;
+  width: 150%;
+  background-color: #31347d;
+  border-radius: 6px;
+  padding: 15px 5px 15px 5px;
+  
+  /* tooltip positioning */
+  position: absolute;
+  z-index: 1; /* this assures no text goes over the image */
+  top: 80%;
+  left: 50%;
+  margin-left: -75%;
+}
+.tooltip .tooltip-content::after { /* tooltip arrow */
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent #31347d transparent;
+}
+.tooltip:hover .tooltip-content { /* make tooltip visible when hovering over table cells */
+  visibility: visible;
+}
+
+/* hyperlink styles */
+a:link {
+	color: #e4ca02;
+	text-decoration: none;
+	font-weight: bold;
+}
+a:visited {
+	color: #ff9d2d;
+	text-decoration: none;
+	font-weight: bold;
 }
