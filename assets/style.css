@@ -113,17 +113,17 @@ table {
 
 /* hyperlink styles */
 a:link {
-	color: #e4ca02;
-	text-decoration: none;
-	font-weight: bold;
+  color: #e4ca02;
+  text-decoration: none;
+  font-weight: bold;
 }
 a:visited {
-	color: #ff9d2d;
-	text-decoration: none;
-	font-weight: bold;
+  color: #ff9d2d;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 /* position adjustment for items on ordered list */
 li {
-margin-left: -0.3vw;
+  margin-left: -0.3vw;
 }
