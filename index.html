@@ -5,29 +5,39 @@
 <link rel="stylesheet" href="assets\style.css">
 </head>
 <body>
+ <!-- load sortable and searchable/filter table scripts, courtesy of w3schools !-->
+<script src="assets\sortable.js"></script>
+<script src="assets\searchable.js"></script>
 <div class="header">
 <img src="img\header.png" alt="header">
 <div class="header-txt">
-<h1 class="h1-txt">Vive's Tenkaichi MODS</h1>
+<h1>Vive's Tenkaichi MODS</h1>
 <h2>
 Welcome to my first (and probably last) GitHub Pages website!
 <br>
 As the name suggests, this is where I shall distribute my own mods more conveniently,
 <br>
 without using blogspots or other website builders. Simply put, an old-school mod exhibit.
-<br>
-</h2>
 <br><br>
-</div>
-</div>
+For starters, you can use the search bar down below to look for any mod without having to scroll down.
 <br>
-<table>
+Although the mods are chronologically ordered based on their release date, they can also be sorted
+<br>
+by their latest update, or alphabetically by clicking either the "MOD Name" or "Description" headers.
+</h2>
+</div>
+</div>
+<div class="filter">
+<input type="text" id="searchbar" onkeyup="filterTable(2)" placeholder="Search for a mod..." title="Search for a mod...">
+</div>
+<table id="modTable"> <!-- sortable table !-->
 <thead>
 <tr>
-<th>Release Date<br>(YY/MM/DD)</th>
-<th>Latest Update<br>(YY/MM/DD)</th>
-<th>MOD Name</th>
-<th>Description</th>
+<!-- sort table upon clicking any header (besides the last) !-->
+<th onclick="sortTable(0)">Release Date<br>(YY/MM/DD)</th>
+<th onclick="sortTable(1)">Latest Update<br>(YY/MM/DD)</th>
+<th onclick="sortTable(2)">MOD Name</th>
+<th onclick="sortTable(3)">Description</th>
 <th>Download Link</th>
 </tr>
 </thead>
@@ -44,7 +54,7 @@ Teen Goku
 <li>In Common Enemy (the first Dragon History scenario), you play as Teen Goku instead of Goku (Early).</li>
 </ol>
 </td>
-<td><a href="https://mega.nz/file/vWQzSYZQ#tCnLezoNjAT-RTmuRJGT-KkEu1AGfbWj14AM0BfIBL8">Click here!</a></td>
+<td><a class="dl-button" target="_blank" href="https://mega.nz/file/vWQzSYZQ#tCnLezoNjAT-RTmuRJGT-KkEu1AGfbWj14AM0BfIBL8"><img class="shenron" src="img\download.png" alt="DL">DOWNLOAD</a></td>
 </tr>
 <tr>
 <td>2018/07/31</td>
@@ -55,7 +65,7 @@ Cyborg Tao FIX
 </td>
 <td>Basically General Tao with Cyborg Tao's skin.
 <br>It is already included for Goku (Early) - False Super Saiyan, but I chose to release it separately anyway.</td>
-<td><a href="https://mega.nz/file/qeYERYQL#jFQRCgMjNr41hW474ir8IUJ8LOywup26jDWgU9_mm3w">Click here!</a></td>
+<td><a class="dl-button" target="_blank" href="https://mega.nz/file/qeYERYQL#jFQRCgMjNr41hW474ir8IUJ8LOywup26jDWgU9_mm3w"><img class="shenron" src="img\download.png" alt="DL">DOWNLOAD</a></td>
 </tr>
 <tr>
 <td>2018/07/31</td>
@@ -65,7 +75,7 @@ Goku (Early) - False Super Saiyan
 <div class="tooltip-content"><img class="preview" src="img\prev-03.png" alt="False Super Saiyan Goku (Early)"></div>
 </td>
 <td>Replaces Cyborg Tao. Comes with the Cyborg Tao FIX, which restores Cyborg Tao but in General Tao's 2nd slot.</td>
-<td><a href="https://mega.nz/file/zLwXhA7b#-th5k1qo_f1LcjeGHner_2A9bvkAOlg0f6jW6473LEg">Click here!</a></td>
+<td><a class="dl-button" target="_blank" href="https://mega.nz/file/zLwXhA7b#-th5k1qo_f1LcjeGHner_2A9bvkAOlg0f6jW6473LEg"><img class="shenron" src="img\download.png" alt="DL">DOWNLOAD</a></td>
 </tr>
 <tr>
 <td>2018/08/07</td>
@@ -75,7 +85,7 @@ Eis Shenron
 <div class="tooltip-content"><img class="preview" src="img\prev-04.png" alt="Eis Shenron"></div>
 </td>
 <td>Replaces Great Ape King Vegeta. As a result, it comes with a fix which disables King Vegeta's transformation.</td>
-<td><a href="https://mega.nz/file/HXxW0QqI#i8ty3n40_VbRg7t8_gPQ4RX9ml7zKw06nMUPAY9uENs">Click here!</a></td>
+<td><a class="dl-button" target="_blank" href="https://mega.nz/file/HXxW0QqI#i8ty3n40_VbRg7t8_gPQ4RX9ml7zKw06nMUPAY9uENs"><img class="shenron" src="img\download.png" alt="DL">DOWNLOAD</a></td>
 </tr>
 <tr>
 <td>2018/08/07</td>
@@ -85,7 +95,7 @@ Nuova Shenron - Shell Form
 <div class="tooltip-content"><img class="preview" src="img\prev-05.png" alt="Nuova Shenron - Shell Form"></div>
 </td>
 <td>Replaces Nuova Shenron's 2nd costume with a better recolor.</td>
-<td><a href="https://mega.nz/file/2CpHFL5R#A8oVgZGZboQ4cy7bZGmGtXdvpgycXwEYeX_Ssa8Oxo8">Click here!</a></td>
+<td><a class="dl-button" target="_blank" href="https://mega.nz/file/2CpHFL5R#A8oVgZGZboQ4cy7bZGmGtXdvpgycXwEYeX_Ssa8Oxo8"><img class="shenron" src="img\download.png" alt="DL">DOWNLOAD</a></td>
 </tr>
 <tr>
 <td>2018/08/11</td>
@@ -96,7 +106,7 @@ Uub (Remastered)
 </td>
 <td>Replaces Uub's 2nd costume with the one seen in Dragon Ball Multiverse.
 <br>Comes with a few moveset changes (mainly for Majuub), and also VFX changes.</td>
-<td><a href="https://mega.nz/file/bfJ0xYyL#5w7v7AZlU89o2V3BuKZSDpWcHou6DeJh3U0WZ3JM8B0">Click here!</a></td>
+<td><a class="dl-button" target="_blank" href="https://mega.nz/file/bfJ0xYyL#5w7v7AZlU89o2V3BuKZSDpWcHou6DeJh3U0WZ3JM8B0"><img class="shenron" src="img\download.png" alt="DL">DOWNLOAD</a></td>
 </tr>
 <tr>
 <td>2018/08/14</td>
@@ -106,7 +116,7 @@ Turles with Cape
 <div class="tooltip-content"><img class="preview" src="img\prev-07.png" alt="Turles with Cape"></div>
 </td>
 <td>Replaces Turles's 2nd costume with the one seen at the beginning of Tree of Might.</td>
-<td><a href="https://mega.nz/file/iPRiGQaT#vcbWfTsmo-O5W0bXTJnaxIrKWK99nXvb1PQjHeibK5w">Click here!</a></td>
+<td><a class="dl-button" target="_blank" href="https://mega.nz/file/iPRiGQaT#vcbWfTsmo-O5W0bXTJnaxIrKWK99nXvb1PQjHeibK5w"><img class="shenron" src="img\download.png" alt="DL">DOWNLOAD</a></td>
 </tr>
 <tr>
 <td>2018/09/07</td>
@@ -117,9 +127,9 @@ Zero Scouter Plan<br>
 <embed src="https://www.youtube.com/embed/videoseries?list=PLsfqh-B9Zs8VjuFsngbhwvvmyapWYSM4O" wmode="transparent" type="video/mp4" width="100%" height="100%" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen title="Zero Scouter Plan">
 </div>
 </td>
-<td>My very first modpack: a collaboration featuring me and <a href="https://www.youtube.com/user/Whatthafuck1994">WitchettyMan</a>.
+<td>My very first modpack: a collaboration featuring me and <a class="other-links" href="https://www.youtube.com/user/Whatthafuck1994">WitchettyMan</a>.
 <br>Our intention was to give a scouterless option to characters who already have (and likely don't need) scouters.</td>
-<td><a href="https://mega.nz/file/3fA3wCBR#DAVbmoHab23yH3SPk5ix_njHdGUj5avBNFC51476ibM">Click here!</a></td>
+<td><a class="dl-button" target="_blank" href="https://mega.nz/file/3fA3wCBR#DAVbmoHab23yH3SPk5ix_njHdGUj5avBNFC51476ibM"><img class="shenron" src="img\download.png" alt="DL">DOWNLOAD</a></td>
 </tr>
 <tr>
 <td>2018/10/22</td>
@@ -129,7 +139,7 @@ Nappa with Scouter<br>
 <div class="tooltip-content"><img class="preview" src="img\prev-08.png" alt="Nappa with Scouter"></div>
 </td>
 <td>Gives Nappa's 1st costume a scouter like that of Vegeta's, but with a blue glass (as shown in the anime).</td>
-<td><a href="https://mega.nz/file/vTQnGQAJ#eGQUYxpKg7Bfxgeb0--hdSBmpWcT6VhArkWIUctYUC0">Click here!</a></td>
+<td><a class="dl-button" target="_blank" href="https://mega.nz/file/vTQnGQAJ#eGQUYxpKg7Bfxgeb0--hdSBmpWcT6VhArkWIUctYUC0"><img class="shenron" src="img\download.png" alt="DL">DOWNLOAD</a></td>
 </tr>
 <tr>
 <td>2018/10/22</td>
@@ -140,7 +150,7 @@ New Loading Screens<br>
 <embed src="https://www.youtube.com/embed/Ms_aVSQtylM" wmode="transparent" type="video/mp4" width="100%" height="100%" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen title="New Loading Screens">
 </td>
 <td>Replaces 2 out of the 3 loading screens with Goku charging a Spirit Bomb and teleporting via Ultra Instinct.</td>
-<td><a href="https://mega.nz/file/uHQ2gCRY#ZjfwXhIt_b_zfwYuNSaWLSpHhn8AxDKOGySEd7N9Gzw">Click here!</a></td>
+<td><a class="dl-button" target="_blank" href="https://mega.nz/file/uHQ2gCRY#ZjfwXhIt_b_zfwYuNSaWLSpHhn8AxDKOGySEd7N9Gzw"><img class="shenron" src="img\download.png" alt="DL">DOWNLOAD</a></td>
 </tr>
 <tr>
 <td>2018/10/27</td>
@@ -150,7 +160,7 @@ Unnamed Commander<br>
 <div class="tooltip-content"><img class="preview" src="img\prev-09.png" alt="Unnammed Commander"></div>
 </td>
 <td>Gives Cui's 2nd costume the appearance of a Kiwian who briefly appeared in the 97th episode of Dragon Ball Z.</td>
-<td><a href="https://mega.nz/file/iehGhALI#7f_up4GFXWbLxCtu6XNMx8gTiwgMJPS8lBkgWBI1ow8">Click here!</a></td>
+<td><a class="dl-button" target="_blank" href="https://mega.nz/file/iehGhALI#7f_up4GFXWbLxCtu6XNMx8gTiwgMJPS8lBkgWBI1ow8"><img class="shenron" src="img\download.png" alt="DL">DOWNLOAD</a></td>
 </tr>
 <tr>
 <td>2018/11/19</td>
@@ -160,7 +170,7 @@ Destroy the Planet! (Modded Death Ball)<br>
 <div class="tooltip-content"><img class="preview" src="img\prev-10.png" alt="Destroy The Planet!"></div>
 </td>
 <td>Gives Final Form Frieza's Ultimate Blast different animations, as well as the ability to destroy planets.</td>
-<td><a href="https://mega.nz/file/ySww3QBR#BmzE4oBbtWiRXHM9ModDFRCe09vBsbMu0qGX4xIFoGk">Click here!</a></td>
+<td><a class="dl-button" target="_blank" href="https://mega.nz/file/ySww3QBR#BmzE4oBbtWiRXHM9ModDFRCe09vBsbMu0qGX4xIFoGk"><img class="shenron" src="img\download.png" alt="DL">DOWNLOAD</a></td>
 </tr>
 <tr>
 <td>2018/11/19</td>
@@ -170,7 +180,7 @@ Supernova for Frieza - 1st Form<br>
 <div class="tooltip-content"><img class="preview" src="img\prev-11.png" alt="Supernova for Frieza - 1st Form"></div>
 </td>
 <td>Replaces 1st Form Frieza's Death Ball with a Supernova, like that of Mecha Frieza's.</td>
-<td><a href="https://mega.nz/file/iDIU1C5B#mhVI5QUOtl4ArWfmfdko0r92_2YkEYR2NYcAjViHoVU">Click here!</a></td>
+<td><a class="dl-button" target="_blank" href="https://mega.nz/file/iDIU1C5B#mhVI5QUOtl4ArWfmfdko0r92_2YkEYR2NYcAjViHoVU"><img class="shenron" src="img\download.png" alt="DL">DOWNLOAD</a></td>
 </tr>
 <tr>
 <td>2018/11/22</td>
@@ -180,7 +190,7 @@ Tenshinhan with White T-Shirt<br>
 <div class="tooltip-content"><img class="preview" src="img\prev-12.png" alt="Tenshinhan with White T-Shirt"></div>
 </td>
 <td>Gives Tien his appearance during the Cell Games.</td>
-<td><a href="https://mega.nz/file/GeYWRaQD#YU23Z03oRp6oV5RvQJv_kv9Qai5mdcsxDDmwyHRKL8k">Click here!</a></td>
+<td><a class="dl-button" target="_blank" href="https://mega.nz/file/GeYWRaQD#YU23Z03oRp6oV5RvQJv_kv9Qai5mdcsxDDmwyHRKL8k"><img class="shenron" src="img\download.png" alt="DL">DOWNLOAD</a></td>
 </tr>
 <tr>
 <td>2018/11/24</td>
@@ -190,7 +200,7 @@ Father-Son Solar Kamehameha<br>
 <div class="tooltip-content"><img class="preview" src="img\prev-13.png" alt="Father-Son Solar Kamehameha"></div>
 </td>
 <td>Replaces Super Perfect Cell and Cell Jr's Ultimate Blasts with Modded versions of Bros. Kamehameha.</td>
-<td><a href="https://mega.nz/file/KSJWHIaZ#3qygJqBRk2G6oaonTAfwB-FtiyFuTSmqiH1im3g08ME">Click here!</a></td>
+<td><a class="dl-button" target="_blank" href="https://mega.nz/file/KSJWHIaZ#3qygJqBRk2G6oaonTAfwB-FtiyFuTSmqiH1im3g08ME"><img class="shenron" src="img\download.png" alt="DL">DOWNLOAD</a></td>
 </tr>
 <tr>
 <td>2018/12/16</td>
@@ -201,7 +211,7 @@ One-Handed Father-Son Kamehameha V1<br>
 </td>
 <td>My first attempt at making Super Saiyan 2 Teen Gohan's Ultimate Blast only use one hand.
 <br>In order to achieve that, I used animations from Super Saiyan Vegeta and Super Saiyan Future Gohan.</td>
-<td><a href="https://mega.nz/file/7fwG2AiA#4yU8RNWH9ID4bFiuUcaGuaxlVqIi6vTdC7DKrZJ7fuk">Click here!</a></td>
+<td><a class="dl-button" target="_blank" href="https://mega.nz/file/7fwG2AiA#4yU8RNWH9ID4bFiuUcaGuaxlVqIi6vTdC7DKrZJ7fuk"><img class="shenron" src="img\download.png" alt="DL">DOWNLOAD</a></td>
 </tr>
 <tr>
 <td>2019/01/12</td>
@@ -210,9 +220,9 @@ One-Handed Father-Son Kamehameha V1<br>
 Bio-Broly (Remastered)<br>
 <div class="tooltip-content"><img class="preview" src="img\prev-15.png" alt="Bio-Broly (Remastered)"></div>
 </td>
-<td>Replaces Great Ape Bardock. Original mod made by <a href="https://kinnikuchu.com">Chuchoman/Kinnikuchu</a>.
+<td>Replaces Great Ape Bardock. Original mod made by <a class="other-links" href="https://kinnikuchu.com">Chuchoman/Kinnikuchu</a>.
 <br>Includes a censored (and uncensored) of Bio-Broly's naked appearance minutes before being deformed.</td>
-<td><a href="https://mega.nz/file/bbgBUaZC#s4kGwlLtZJ4ibzI7QpEvInxTMdx0fEv9HWyHEXndd90">Click here!</a></td>
+<td><a class="dl-button" target="_blank" href="https://mega.nz/file/bbgBUaZC#s4kGwlLtZJ4ibzI7QpEvInxTMdx0fEv9HWyHEXndd90"><img class="shenron" src="img\download.png" alt="DL">DOWNLOAD</a></td>
 </tr>
 <tr>
 <td>2019/01/20</td>
@@ -223,7 +233,7 @@ Majin Buu (Remastered)<br>
 </td>
 <td>Replaces Evil Buu and Super Buu's 2nd costumes with Zen Buu from Dragon Ball Multiverse.
 <br>Most importantly, it gives Evil Buu better Blast 1's and the ability to transform into Super Buu.</td>
-<td><a href="https://mega.nz/file/PbRTGAoQ#YsBoa_9epx2c4qzY8y-BaSNZ2MOds6_hH0_iYzuCVuU">Click here!</a></td>
+<td><a class="dl-button" target="_blank" href="https://mega.nz/file/PbRTGAoQ#YsBoa_9epx2c4qzY8y-BaSNZ2MOds6_hH0_iYzuCVuU"><img class="shenron" src="img\download.png" alt="DL">DOWNLOAD</a></td>
 </tr>
 <tr>
 <td>2019/01/22</td>
@@ -233,7 +243,7 @@ Adult Gohan (Remastered)<br>
 <div class="tooltip-content"><img class="preview" src="img\prev-17.png" alt="Adult Gohan (Remastered)"></div>
 </td>
 <td>Gives Adult Gohan his father's gi, as well as the ability to transform into Ultimate Gohan, like in Budokai 3.</td>
-<td><a href="https://mega.nz/file/nOpRwACI#_czcDJ1uolQejHxy8fE3J5dmJGywfnMLoBwfuTWfsuE">Click here!</a></td>
+<td><a class="dl-button" target="_blank" href="https://mega.nz/file/nOpRwACI#_czcDJ1uolQejHxy8fE3J5dmJGywfnMLoBwfuTWfsuE"><img class="shenron" src="img\download.png" alt="DL">DOWNLOAD</a></td>
 </tr>
 <tr>
 <td>2019/02/10</td>
@@ -243,7 +253,7 @@ Hell Fighter #17<br>
 <div class="tooltip-content"><img class="preview" src="img\prev-18.png" alt="Hell Fighter #17"></div>
 </td>
 <td>Replaces Spopovich with an evil clone of Android #17, who is able to fuse with said #17 into Super Android #17.</td>
-<td><a href="https://mega.nz/file/jbJkCQhK#fGHcCKH66ILPxJ2URX6aJprckexkN5Jb8wFZlQsF2DU">Click here!</a></td>
+<td><a class="dl-button" target="_blank" href="https://mega.nz/file/jbJkCQhK#fGHcCKH66ILPxJ2URX6aJprckexkN5Jb8wFZlQsF2DU"><img class="shenron" src="img\download.png" alt="DL">DOWNLOAD</a></td>
 </tr>
 <tr>
 <td>2019/02/24</td>
@@ -255,7 +265,7 @@ Red Z-Items turned into Skill Z-Items<br>
 <td>Red Z-Items are hidden Z-Items that the developers used for game modes like Dragon History and Ultimate Battle.
 <br>This mod turns them into yellow ones, which means they can be bought in the Item Shop.
 <br>Results may vary in Duel Mode, since not every Red Z-Item in question actually works as intended.</td>
-<td><a href="https://mega.nz/file/bfhRnQxA#jmlP6NSVKOpKitgV2FA_g4151LaN81lVplQkeSL8lSc">Click here!</a></td>
+<td><a class="dl-button" target="_blank" href="https://mega.nz/file/bfhRnQxA#jmlP6NSVKOpKitgV2FA_g4151LaN81lVplQkeSL8lSc"><img class="shenron" src="img\download.png" alt="DL">DOWNLOAD</a></td>
 </tr>
 <tr>
 <td>2019/02/28</td>
@@ -266,7 +276,7 @@ Ginyu in Vegeta's Body<br>and Vegeta in Goku's Body<br>
 </td>
 <td>Based on a what-if scenario where Captain Ginyu's 2nd Body Change ends up being successful.
 <br>This mod gives Vegeta (Scouter) the look of Goku (Mid), and Captain Ginyu the look of Vegeta with Jeice's scouter.</td>
-<td><a href="https://mega.nz/file/uewx3AQI#9bUtRPjmx9P-wTNBTkx7nB1BLYpQc2CpZN6VVans2z0">Click here!</a></td>
+<td><a class="dl-button" target="_blank" href="https://mega.nz/file/uewx3AQI#9bUtRPjmx9P-wTNBTkx7nB1BLYpQc2CpZN6VVans2z0"><img class="shenron" src="img\download.png" alt="DL">DOWNLOAD</a></td>
 </tr>
 <tr>
 <td>2019/03/06</td>
@@ -277,7 +287,7 @@ Vegeta (Remastered)<br>
 </td>
 <td>Gives every Vegeta besides Vegeta (Scouter) more outfits, such as the one seen in Dragon Ball GT.
 <br>It also gives Vegeta (second form) the ability to transform into Majin Vegeta or Super Saiyan 4 Vegeta.</td>
-<td><a href="https://mega.nz/file/vLAQFaQT#CT6tRRfKKZr0Qu7bkyz4KYwGndkys-IJCK3C2AaHK4Y">Click here!</a></td>
+<td><a class="dl-button" target="_blank" href="https://mega.nz/file/vLAQFaQT#CT6tRRfKKZr0Qu7bkyz4KYwGndkys-IJCK3C2AaHK4Y"><img class="shenron" src="img\download.png" alt="DL">DOWNLOAD</a></td>
 </tr>
 <tr>
 <td>2019/05/16</td>
@@ -289,7 +299,7 @@ Goku (Early) - Kaio-ken<br>
 <td>Easily one of my favorite mods, with the most effort I've ever put in. Replaces Great Ape Fasha.
 <br>Comes with two versions, and one fix for both of them (which disables Fasha's ability to transform).
 <br>Version 1 works for Goku (Early) - False Super Saiyan, while Version 2 doesn't.</td>
-<td><a href="https://mega.nz/file/fLQzyQBL#1nRGI-LHiPgZA94jhctHNjRAD3dpGN09jI6hGxwS0-0">Click here!</a></td>
+<td><a class="dl-button" target="_blank" href="https://mega.nz/file/fLQzyQBL#1nRGI-LHiPgZA94jhctHNjRAD3dpGN09jI6hGxwS0-0"><img class="shenron" src="img\download.png" alt="DL">DOWNLOAD</a></td>
 </tr>
 <tr>
 <td>2019/05/29</td>
@@ -299,7 +309,7 @@ Piccolo (Early) - Giant Form<br>
 <div class="tooltip-content"><img class="preview" src="img\prev-23.png" alt="Piccolo (Early) - Giant Form"></div>
 </td>
 <td>Replaces Great Ape Raditz, which is why it comes with a fix that disables Raditz's ability to transform.</td>
-<td><a href="https://mega.nz/file/HPYByISb#bD78BQ06gqWGzBUbk6nAWV_aHHzXjGybomIFbysg2jA">Click here!</a></td>
+<td><a class="dl-button" target="_blank" href="https://mega.nz/file/HPYByISb#bD78BQ06gqWGzBUbk6nAWV_aHHzXjGybomIFbysg2jA"><img class="shenron" src="img\download.png" alt="DL">DOWNLOAD</a></td>
 </tr>
 <tr>
 <td>2019/06/02</td>
@@ -310,7 +320,7 @@ Piccolo with Turban and No Cape<br>
 </td>
 <td>Gives both Piccolo (Early) and Piccolo (End) just the turban, with the only difference being in the belt.
 <br>This mod comes in two versions: one for Piccolo (Early) - Giant Form, the other containing just the mod.</td>
-<td><a href="https://mega.nz/file/uWhg2A6Q#dZQpbWwOA6DKHm2mjxWkuKxGaCA6trC1Pa2NimYJaKE">Click here!</a></td>
+<td><a class="dl-button" target="_blank" href="https://mega.nz/file/uWhg2A6Q#dZQpbWwOA6DKHm2mjxWkuKxGaCA6trC1Pa2NimYJaKE"><img class="shenron" src="img\download.png" alt="DL">DOWNLOAD</a></td>
 </tr>
 <tr>
 <td>2019/06/09</td>
@@ -320,9 +330,9 @@ Future Gohan with Cybernetic Arm<br>and Future Gohan with One Arm<br>
 <div class="tooltip-content"><img class="preview" src="img\prev-25.png" alt="Future Gohan with Cybernetic Arm and One Arm"></div>
 </td>
 <td>The 1st mod is based on a what-if scenario where Bulma actually builds Future Gohan a new arm.
-<br>The design for it was wonderfully animated by <a href="https://www.deviantart.com/anomian/art/Cyborg-Future-Gohan-697952486">Anomian on Deviantart</a>, but I tweaked it a bit for the mod.
+<br>The design for it was wonderfully animated by <a class="other-links" href="https://www.deviantart.com/anomian/art/Cyborg-Future-Gohan-697952486">Anomian on Deviantart</a>, but I tweaked it a bit for the mod.
 <br>Unfortunately for Gohan, the 2nd mod is him missing his left arm after what the Androids did to him.</td>
-<td><a href="https://mega.nz/file/fLJHGIDK#Qn0Pv3n8iqoAuBnmzB2nDINLVczTnxfBilmMoiy90Vc">Click here!</a></td>
+<td><a class="dl-button" target="_blank" href="https://mega.nz/file/fLJHGIDK#Qn0Pv3n8iqoAuBnmzB2nDINLVczTnxfBilmMoiy90Vc"><img class="shenron" src="img\download.png" alt="DL">DOWNLOAD</a></td>
 </tr>
 <tr>
 <td>2019/06/13</td>
@@ -335,7 +345,7 @@ Super Kaio-ken (Modded Blast 1)<br>
 <br>This time, the red aura stays permanently, and it even hurts the opponent, unless a Super/Ultimate Attack is fired.
 <br>Also, the Kaio-ken effect lasts longer because the Blast 1 assures that Goku goes in MAX POWER Mode.
 </td>
-<td><a href="https://mega.nz/file/SKxzBaCC#oYvFQyBbAs_OS7hWd4388TjEghc71ko5gIZ6RxRR1sQ">Click here!</a></td>
+<td><a class="dl-button" target="_blank" href="https://mega.nz/file/SKxzBaCC#oYvFQyBbAs_OS7hWd4388TjEghc71ko5gIZ6RxRR1sQ"><img class="shenron" src="img\download.png" alt="DL">DOWNLOAD</a></td>
 </tr>
 <tr>
 <td>2019/06/16</td>
@@ -346,7 +356,7 @@ Ghost Nappa<br>
 </td>
 <td>Based on an in-joke from season 2 of DBZ Abridged, this mod turns Nappa into a ghost. 
 <br>For comedic reasons, his Aura Charge is disabled, and his 1st Blast 1 is renamed to "Ghost Soul".</td>
-<td><a href="https://mega.nz/file/jfxQTYLC#fuU_PF_2d0J0HDZ7poi52m4RV-3TuomKzk9Q7jDP4Ro">Click here!</a></td>
+<td><a class="dl-button" target="_blank" href="https://mega.nz/file/jfxQTYLC#fuU_PF_2d0J0HDZ7poi52m4RV-3TuomKzk9Q7jDP4Ro"><img class="shenron" src="img\download.png" alt="DL">DOWNLOAD</a></td>
 </tr>
 <tr>
 <td>2019/06/18</td>
@@ -357,7 +367,7 @@ Tenshinhan (Dragon Ball)<br>
 </td>
 <td>Gives Tien his appearance from the 22nd World Martial Arts Tournament,
 <br>in which he wears purple pants (instead of green), and has no scar on his chest... yet.</td>
-<td><a href="https://mega.nz/file/zHolyQrC#pzLdJv1RezkxPcoT0o91D2qxJYDe7KFs0NTEcAh9dFo">Click here!</a></td>
+<td><a class="dl-button" target="_blank" href="https://mega.nz/file/zHolyQrC#pzLdJv1RezkxPcoT0o91D2qxJYDe7KFs0NTEcAh9dFo"><img class="shenron" src="img\download.png" alt="DL">DOWNLOAD</a></td>
 </tr>
 <tr>
 <td>2019/06/21</td>
@@ -368,7 +378,7 @@ Power Up to the Very Limit FIX<br>
 </td>
 <td>This mod fixes Super Saiyan 3 Goku (End)'s 2nd Blast 1, so that it actually boosts all stats by 5%,
 <br>the same way it would for any other character. Originally, it would only grant MAX POWER Mode.</td>
-<td><a href="https://mega.nz/file/PSZhFK7D#9L5YWnBLexQo9Xak87EdnfnRe924LtARhwLIXPmjV9o">Click here!</a></td>
+<td><a class="dl-button" target="_blank" href="https://mega.nz/file/PSZhFK7D#9L5YWnBLexQo9Xak87EdnfnRe924LtARhwLIXPmjV9o"><img class="shenron" src="img\download.png" alt="DL">DOWNLOAD</a></td>
 </tr>
 <tr>
 <td>2019/06/23</td>
@@ -381,7 +391,7 @@ Angry Kamehameha with Better VFX<br>
 <br>It also gives Super Saiyan Goku (End) a chargeable variant of this move,
 <br>and both of them say "YOU FOOL!" upon firing it, just like in the anime.
 <br>This mod comes in two versions: one assumes you have Super Kaio-ken installed, the other doesn't.</td>
-<td><a href="https://mega.nz/file/vaICzYjZ#V_I_zMHFg8Tq_KVENRsg7nxcm5isrRjh289tiXns4GA">Click here!</a></td>
+<td><a class="dl-button" target="_blank" href="https://mega.nz/file/vaICzYjZ#V_I_zMHFg8Tq_KVENRsg7nxcm5isrRjh289tiXns4GA"><img class="shenron" src="img\download.png" alt="DL">DOWNLOAD</a></td>
 </tr>
 <tr>
 <td>2019/06/28</td>
@@ -392,9 +402,9 @@ Piccolo with Whis Gi<br>
 </td>
 <td>Based on a what-if scenario, where Piccolo is also trained by Whis, not just Goku and Vegeta.
 <br>The design for this mod was inspired by Piccolo's 2nd outfit on Super Dragon Ball Z,
-<br>as well as a particular design made by <a href="https://www.deviantart.com/namekiankai/art/Piccolo-Contemplation-274724819">Namekiankai on Deviantart</a>.
+<br>as well as a particular design made by <a class="other-links" href="https://www.deviantart.com/namekiankai/art/Piccolo-Contemplation-274724819">Namekiankai on Deviantart</a>.
 <br>In addition, Piccolo (Early) is able to transform into a Super Namekian Blue, which is a reskin of Piccolo (End).</td>
-<td><a href="https://mega.nz/file/LDQj0QJb#Zn5lKe4-SCwlZQEM-Sq9EIbuhIqR_OJiY09oN0mgkKo">Click here!</a></td>
+<td><a class="dl-button" target="_blank" href="https://mega.nz/file/LDQj0QJb#Zn5lKe4-SCwlZQEM-Sq9EIbuhIqR_OJiY09oN0mgkKo"><img class="shenron" src="img\download.png" alt="DL">DOWNLOAD</a></td>
 </tr>
 <tr>
 <td>2019/07/05</td>
@@ -405,7 +415,7 @@ Trunks (Sword) with Battle Armor<br>
 </td>
 <td>Based on his unlockable costume in Budokai 3, this mod gives Trunks (Sword) his father's battle armor,
 <br>while still keeping his sword, whose holder has been recolored to resemble that of the Budokai series.</td>
-<td><a href="https://mega.nz/file/meYHzK4Q#dNMwxFAnVLRLGkKredTmKsCpFu917dV6syYP9_Y6JXo">Click here!</a></td>
+<td><a class="dl-button" target="_blank" href="https://mega.nz/file/meYHzK4Q#dNMwxFAnVLRLGkKredTmKsCpFu917dV6syYP9_Y6JXo"><img class="shenron" src="img\download.png" alt="DL">DOWNLOAD</a></td>
 </tr>
 <tr>
 <td>2019/07/11</td>
@@ -415,7 +425,7 @@ Red/Green/Blue Screen<br>
 <div class="tooltip-content"><img class="preview" src="img\prev-33.png" alt="Red/Green/Blue Screen"></div>
 </td>
 <td>Originally made by my mentor iManjiGaming for his videos. Replaces Outer Space, comes with 3 colors.</td>
-<td><a href="https://mega.nz/file/XahAxAKB#OxEi5xrkByWAN_mCJGpR0HclceTFDmKCtRQ-jGpQycc">Click here!</a></td>
+<td><a class="dl-button" target="_blank" href="https://mega.nz/file/XahAxAKB#OxEi5xrkByWAN_mCJGpR0HclceTFDmKCtRQ-jGpQycc"><img class="shenron" src="img\download.png" alt="DL">DOWNLOAD</a></td>
 </tr>
 <tr>
 <td>2019/07/28</td>
@@ -426,7 +436,7 @@ Vegito/Gogeta (Remastered)<br>
 </td>
 <td>Inspired by several modders who have made such fusion revamps before me.
 <br>My take on it consists of many moveset changes and new costumes.</td>
-<td><a href="https://mega.nz/file/HfgjWRCT#agedO0W2yGG-HNaaGMJjPtJjbHYHjbgFMnqzhhaSyEk">Click here!</a></td>
+<td><a class="dl-button" target="_blank" href="https://mega.nz/file/HfgjWRCT#agedO0W2yGG-HNaaGMJjPtJjbHYHjbgFMnqzhhaSyEk"><img class="shenron" src="img\download.png" alt="DL">DOWNLOAD</a></td>
 </tr>
 <tr>
 <td>2019/08/07</td>
@@ -437,7 +447,7 @@ Vegito Blue<br>
 </td>
 <td>Replaces Great Ape Nappa. Comes with Super Saiyan Blue Gogeta as his 2nd costume,
 <br>as well as two versions of said mod: one with additional files for Vegito/Gogeta (Remastered), the other without them.</td>
-<td><a href="https://mega.nz/file/nf4DFKAb#HBepSwViycEO7Zihv3Ych4ielgAf5kuOaMV2sWpMXa4">Click here!</a></td>
+<td><a class="dl-button" target="_blank" href="https://mega.nz/file/nf4DFKAb#HBepSwViycEO7Zihv3Ych4ielgAf5kuOaMV2sWpMXa4"><img class="shenron" src="img\download.png" alt="DL">DOWNLOAD</a></td>
 </tr>
 <tr>
 <td>2019/09/10</td>
@@ -447,8 +457,8 @@ Kid Goku Doll<br>
 <div class="tooltip-content"><img class="preview" src="img\prev-36.png" alt="Kid Goku Doll"></div>
 </td>
 <td>Replaces Grandpa Gohan's 2nd costume, because his Special Attacks are the closest to Kid Goku's.
-<br>Special Thanks to <a href="https://www.youtube.com/user/Whatthafuck1994">WitchettyMan</a> for requesting and fixing the textures for this mod!</td>
-<td><a href="https://mega.nz/file/HDo2UYhZ#GiAdZQd8Qa-CrJ_ntkHgBaP7yfgkCqDPIMecThTx9AA">Click here!</a></td>
+<br>Special Thanks to <a class="other-links" href="https://www.youtube.com/user/Whatthafuck1994">WitchettyMan</a> for requesting and fixing the textures for this mod!</td>
+<td><a class="dl-button" target="_blank" href="https://mega.nz/file/HDo2UYhZ#GiAdZQd8Qa-CrJ_ntkHgBaP7yfgkCqDPIMecThTx9AA"><img class="shenron" src="img\download.png" alt="DL">DOWNLOAD</a></td>
 </tr>
 <tr>
 <td>2019/09/28</td>
@@ -458,7 +468,7 @@ Bardock - Super Saiyan<br>
 <div class="tooltip-content"><img class="preview" src="img\prev-37.png" alt="Bardock - Super Saiyan"></div>
 </td>
 <td>Replaces Kibito Kai. Comes with a fix that disables Supreme Kai's transformation, as well as a scouterless costume.</td>
-<td><a href="https://mega.nz/file/rXA0AQCa#GfW01D4Na5j1x3hvcc1CX8mKgPCsLR98uTPpfClfIOw">Click here!</a></td>
+<td><a class="dl-button" target="_blank" href="https://mega.nz/file/rXA0AQCa#GfW01D4Na5j1x3hvcc1CX8mKgPCsLR98uTPpfClfIOw"><img class="shenron" src="img\download.png" alt="DL">DOWNLOAD</a></td>
 </tr>
 <tr>
 <td>2019/10/04</td>
@@ -470,7 +480,7 @@ Goku (Remastered)<br>
 <td>Includes Angry Kamehameha as Super Saiyan Goku (End)'s 1st Blast 2,
 <br>as well as the Power Up to the Very Limit fix for Super Saiyan 3 Goku (End).
 <br>This mod also comes with many moveset and costume changes, particularly for his Super Saiyan 2/4 forms.</td>
-<td><a href="https://mega.nz/file/jCYxUAAL#loomoIBPy0kZzHul1c3Z4osFPjkkAnihlZlkbrfXQ64">Click here!</a></td>
+<td><a class="dl-button" target="_blank" href="https://mega.nz/file/jCYxUAAL#loomoIBPy0kZzHul1c3Z4osFPjkkAnihlZlkbrfXQ64"><img class="shenron" src="img\download.png" alt="DL">DOWNLOAD</a></td>
 </tr>
 <tr>
 <td>2019/10/13</td>
@@ -481,7 +491,7 @@ Cell (Remastered)<br>
 </td>
 <td>Improves Cell's 2nd costume so that it looks more like Cell Jr, as shown by the orange eyes and skin tone.
 <br>Replaces Semi-Perfect Cell's Drain Life Cell with Galick Gun, and gives Perfect Cell the ability to detransform.</td>
-<td><a href="https://mega.nz/file/aOZAlQSA#xxVjV-FeP6wQYyCriUf71cPWJa_rid-g3WsjKo7A4Yo">Click here!</a></td>
+<td><a class="dl-button" target="_blank" href="https://mega.nz/file/aOZAlQSA#xxVjV-FeP6wQYyCriUf71cPWJa_rid-g3WsjKo7A4Yo"><img class="shenron" src="img\download.png" alt="DL">DOWNLOAD</a></td>
 </tr>
 <tr>
 <td>2019/10/23</td>
@@ -491,7 +501,7 @@ Super Saiyan God Goku/Vegeta<br>
 <div class="tooltip-content"><img class="preview" src="img\prev-40.png" alt="Super Saiyan God Goku & Vegeta"></div>
 </td>
 <td>Gives Goku and Vegeta their Super Saiyan God forms as alternate costumes of their Super Saiyan 4 forms.</td>
-<td><a href="https://mega.nz/file/fP5yUaLJ#A0ZWvO0x5Qp4aGcFICKTHTu8MOYCsc8AJ3jabBgCh5s">Click here!</a></td>
+<td><a class="dl-button" target="_blank" href="https://mega.nz/file/fP5yUaLJ#A0ZWvO0x5Qp4aGcFICKTHTu8MOYCsc8AJ3jabBgCh5s"><img class="shenron" src="img\download.png" alt="DL">DOWNLOAD</a></td>
 </tr>
 <tr>
 <td>2019/11/06</td>
@@ -502,7 +512,7 @@ Dragon Rush (Modded Blast 2)<br>
 </td>
 <td>Replaces Master Roshi - MAX Power's Kamehameha with the Turtle School Ultimate Fist from Budokai Tenkaichi 2.
 <br>This way, he gets to keep both rushes, although Blast Combos are unfortunately disabled.</td>
-<td><a href="https://mega.nz/file/mGggGYCI#4FU5nuVbzXDB0zOyzUEur7K-7gWcn5ShmelzAM0zI_M">Click here!</a></td>
+<td><a class="dl-button" target="_blank" href="https://mega.nz/file/mGggGYCI#4FU5nuVbzXDB0zOyzUEur7K-7gWcn5ShmelzAM0zI_M"><img class="shenron" src="img\download.png" alt="DL">DOWNLOAD</a></td>
 </tr>
 <tr>
 <td>2019/11/20</td>
@@ -512,7 +522,7 @@ Teen Gohan with Movie 8 Outfit<br>
 <div class="tooltip-content"><img class="preview" src="img\prev-42.png" alt="Dragon Rush (Modded Blast 2)"></div>
 </td>
 <td>Gives Teen Gohan the outfit he's seen wearing in the first Broly movie.</td>
-<td><a href="https://mega.nz/#!Tb4kFSrb!Jj0eeFdDhEH_4VrdJ0q29-FzkWZV039_tF98PPhkXak">Click here!</a></td>
+<td><a class="dl-button" target="_blank" href="https://mega.nz/#!Tb4kFSrb!Jj0eeFdDhEH_4VrdJ0q29-FzkWZV039_tF98PPhkXak"><img class="shenron" src="img\download.png" alt="DL">DOWNLOAD</a></td>
 </tr>
 <tr>
 <td>2019/11/23</td>
@@ -523,7 +533,7 @@ Vegeta (second form) - Super Saiyan 3<br>
 </td>
 <td>Replaces Yajirobe with Vegeta's what-if form known from the Raging Blast series.
 <br>As expected, it comes with two versions: one with additional files for Vegeta (Remastered), the other without them.</td>
-<td><a href="https://mega.nz/file/OX5BUSLZ#zcYEo3HRHAZ_dG97Mx0G_Pk46Z8pwNADYtuhpQFQrcA">Click here!</a></td>
+<td><a class="dl-button" target="_blank" href="https://mega.nz/file/OX5BUSLZ#zcYEo3HRHAZ_dG97Mx0G_Pk46Z8pwNADYtuhpQFQrcA"><img class="shenron" src="img\download.png" alt="DL">DOWNLOAD</a></td>
 </tr>
 <tr>
 <td>2019/12/05</td>
@@ -534,7 +544,7 @@ Goku (End) - Super Saiyan Blue<br>
 </td>
 <td>Replaces Yajirobe with Vegeta's what-if form known from the Raging Blast series.
 <br>As expected, it comes with two versions: one with additional files for Vegeta (Remastered), the other without them.</td>
-<td><a href="https://mega.nz/file/iOhRWajQ#9Q9PRjBAUleu63VP8fCuts8Krh5uQK-fhwx3gnIfh7I">Click here!</a></td>
+<td><a class="dl-button" target="_blank" href="https://mega.nz/file/iOhRWajQ#9Q9PRjBAUleu63VP8fCuts8Krh5uQK-fhwx3gnIfh7I"><img class="shenron" src="img\download.png" alt="DL">DOWNLOAD</a></td>
 </tr>
 <tr>
 <td>2019/12/14</td>
@@ -561,7 +571,7 @@ Twelve Mods of Christmas<br>
 <li>Mercenary Tao without his gi, as his 2nd costume.</li>
 </ol>
 </td>
-<td><a href="https://mega.nz/file/uKAAyIRZ#T0yuDqMIwuzvAk8XcfqUZZ5_ABGqx_h3Vyfi6KnC7oU">Click here!</a></td>
+<td><a class="dl-button" target="_blank" href="https://mega.nz/file/uKAAyIRZ#T0yuDqMIwuzvAk8XcfqUZZ5_ABGqx_h3Vyfi6KnC7oU"><img class="shenron" src="img\download.png" alt="DL">DOWNLOAD</a></td>
 </tr>
 <tr>
 <td>2019/12/29</td>
@@ -573,7 +583,7 @@ Legendary Super Saiyan (Modded Scenario)<br>
 <td>The entirety of this scenario takes place in Namek rather than Dying Namek, since that's how it was in the anime.
 <br>Unfortunately, the planet does NOT blow up on its own.
 <br>Although, Goku (Mid) starts out the battle with his undershirt still intact (well, it's still damaged a bit).</td>
-<td><a href="https://mega.nz/file/6aIHgIgY#KL_z2kCJe65KfNRaCoyscBYLkWKHrE7M432ttxK1b0Q">Click here!</a></td>
+<td><a class="dl-button" target="_blank" href="https://mega.nz/file/6aIHgIgY#KL_z2kCJe65KfNRaCoyscBYLkWKHrE7M432ttxK1b0Q"><img class="shenron" src="img\download.png" alt="DL">DOWNLOAD</a></td>
 </tr>
 <tr>
 <td>2020/01/27</td>
@@ -589,7 +599,7 @@ Vegeta (second form) - Super Saiyan Blue<br>
 <li>Neither of them, just the mod on its own.</li>
 </ol>
 </td>
-<td><a href="https://mega.nz/file/SbJSRIgL#ocHoE3EM6rnlVdBA5Dq3BocMrcvROWqBHTKB9_0Y_No">Click here!</a></td>
+<td><a class="dl-button" target="_blank" href="https://mega.nz/file/SbJSRIgL#ocHoE3EM6rnlVdBA5Dq3BocMrcvROWqBHTKB9_0Y_No"><img class="shenron" src="img\download.png" alt="DL">DOWNLOAD</a></td>
 </tr>
 <tr>
 <td>2020/01/31</td>
@@ -600,7 +610,7 @@ Golden Frieza<br>
 </td>
 <td>Replaces Great Ape Bardock. Comes with two versions of the same fix: one containing additional files
 <br>for the Zero Scouter Plan, the other containing just the mod. Point is, Bardock can no longer transform.</td>
-<td><a href="https://mega.nz/file/bfQVlYib#QG_I6fWSCYGL8sDGzah4bUDvQNGwNvC2Xmx7z1OwX3k">Click here!</a></td>
+<td><a class="dl-button" target="_blank" href="https://mega.nz/file/bfQVlYib#QG_I6fWSCYGL8sDGzah4bUDvQNGwNvC2Xmx7z1OwX3k"><img class="shenron" src="img\download.png" alt="DL">DOWNLOAD</a></td>
 </tr>
 <tr>
 <td>2020/02/04</td>
@@ -611,7 +621,7 @@ Destructo Disc for Perfect Cell<br>
 </td>
 <td>Replaces Perfect Cell's Barrage Death Beam with a recreation of his Destructo Disc from Budokai Tenkaichi 2.
 <br>As expected, because this mod comes in conflict with Cell (Remastered), there are two versions of this mod.</td>
-<td><a href="https://mega.nz/file/XChGCCbD#9gIyEwLl3I13BSR1fDdh0u7czSMXEOp2U_Ub3Vbx7RU">Click here!</a></td>
+<td><a class="dl-button" target="_blank" href="https://mega.nz/file/XChGCCbD#9gIyEwLl3I13BSR1fDdh0u7czSMXEOp2U_Ub3Vbx7RU"><img class="shenron" src="img\download.png" alt="DL">DOWNLOAD</a></td>
 </tr>
 <tr>
 <td>2020/04/16</td>
@@ -621,7 +631,7 @@ Future Trunks from DBS Flashback<br>
 <div class="tooltip-content"><img class="preview" src="img\prev-49.png" alt="Future Trunks from DBS Flashback"></div>
 </td>
 <td>Gives Future Trunks his appearance from the flashback in the 58th episode of Dragon Ball Super.</td>
-<td><a href="https://mega.nz/file/XeoHXK7Z#11xrClNdYQtdd8T9WJyeFZhTLrrs87EUofLskoWJceo">Click here!</a></td>
+<td><a class="dl-button" target="_blank" href="https://mega.nz/file/XeoHXK7Z#11xrClNdYQtdd8T9WJyeFZhTLrrs87EUofLskoWJceo"><img class="shenron" src="img\download.png" alt="DL">DOWNLOAD</a></td>
 </tr>
 <tr>
 <td>2020/04/23</td>
@@ -631,7 +641,7 @@ Teen Gohan (Semi-damaged)<br>
 <div class="tooltip-content"><img class="preview" src="img\prev-50.png" alt="Teen Gohan (Semi-damaged)"></div>
 </td>
 <td>Gives Teen Gohan a slightly battledamaged look, as well as a huge blood splatter on his forehead and lips.</td>
-<td><a href="https://mega.nz/file/jH4DXDAQ#lxp_wiJr_LTFgtmyG39P4RYj50w8SW79HtmkVGcDhqo">Click here!</a></td>
+<td><a class="dl-button" target="_blank" href="https://mega.nz/file/jH4DXDAQ#lxp_wiJr_LTFgtmyG39P4RYj50w8SW79HtmkVGcDhqo"><img class="shenron" src="img\download.png" alt="DL">DOWNLOAD</a></td>
 </tr>
 <tr>
 <td>2020/05/10</td>
@@ -641,7 +651,7 @@ Super Buu - Piccolo/Vegeta Absorbed<br>
 <div class="tooltip-content"><img class="preview" src="img\prev-51.png" alt="Teen Gohan (Semi-damaged)"></div>
 </td>
 <td>Gives Super Buu two new absorptions from Budokai 2/3 as alternate costumes of Buutenks and Buuhan.</td>
-<td><a href="https://mega.nz/file/DCITzAiB#q8YhROWsyq-MS_UBmyJzG6oDY7O6pkyu35R3MXQcpVc">Click here!</a></td>
+<td><a class="dl-button" target="_blank" href="https://mega.nz/file/DCITzAiB#q8YhROWsyq-MS_UBmyJzG6oDY7O6pkyu35R3MXQcpVc"><img class="shenron" src="img\download.png" alt="DL">DOWNLOAD</a></td>
 </tr>
 <tr>
 <td>2020/05/14</td>
@@ -650,8 +660,8 @@ Super Buu - Piccolo/Vegeta Absorbed<br>
 What If Cell Turned Good<br>
 <div class="tooltip-content"><img class="preview" src="img\prev-52.png" alt="What If Cell Turned Good"></div>
 </td>
-<td>Based on <a href="https://www.youtube.com/watch?v=uBY1hWBOM_4&list=PLNSgpJTAeqwn8QKEDIq2SdQlaFFYhAYq7">MasakoX's What-If series about a pure-hearted version of Cell</a>, with blue eyes and Piccolo's gi.</td>
-<td><a href="https://mega.nz/file/WHAmBACB#mVgR5NuJUXYy_gczR-Q1evOQEhpL946WFCAPyKzM4rE">Click here!</a></td>
+<td>Based on <a class="other-links" href="https://www.youtube.com/watch?v=uBY1hWBOM_4&list=PLNSgpJTAeqwn8QKEDIq2SdQlaFFYhAYq7">MasakoX's What-If series about a pure-hearted version of Cell</a>, with blue eyes and Piccolo's gi.</td>
+<td><a class="dl-button" target="_blank" href="https://mega.nz/file/WHAmBACB#mVgR5NuJUXYy_gczR-Q1evOQEhpL946WFCAPyKzM4rE"><img class="shenron" src="img\download.png" alt="DL">DOWNLOAD</a></td>
 </tr>
 <tr>
 <td>2020/06/14</td>
@@ -665,7 +675,7 @@ Customized Soundtrack (Version 1)<br>
 <td>This mod will only work for vanilla ISO's. Other ISO's out in the wild are already personalized
 <br>(modified to the person's liking), so the mod installation process will obviously be different. 
 <br>It adds only four of Budokai Tenkaichi 2's best songs: Gatebreaker, Mind Space, Lost Courage, and Dark Half.</td>
-<td><a href="https://mega.nz/file/uKAAyIRZ#T0yuDqMIwuzvAk8XcfqUZZ5_ABGqx_h3Vyfi6KnC7oU">Click here!</a></td>
+<td><a class="dl-button" target="_blank" href="https://mega.nz/file/uKAAyIRZ#T0yuDqMIwuzvAk8XcfqUZZ5_ABGqx_h3Vyfi6KnC7oU"><img class="shenron" src="img\download.png" alt="DL">DOWNLOAD</a></td>
 </tr>
 <tr>
 <td>2020/06/19</td>
@@ -676,7 +686,7 @@ False Super Saiyan (Modded Scenario)<br>
 </td>
 <td>This mod will work as intended IF AND ONLY IF the Goku (Early) - False Super Saiyan mod is installed first.
 <br>Otherwise, there will be no changes made to the scenario, since the transformation sequences will be skipped.</td>
-<td><a href="https://mega.nz/file/vLpRXbpZ#hok4uBAgnh2FRQyQlOqlVCMF9rZbwrXNzEChSkRqZxw">Click here!</a></td>
+<td><a class="dl-button" target="_blank" href="https://mega.nz/file/vLpRXbpZ#hok4uBAgnh2FRQyQlOqlVCMF9rZbwrXNzEChSkRqZxw"><img class="shenron" src="img\download.png" alt="DL">DOWNLOAD</a></td>
 </tr>
 <tr>
 <td>2020/07/01</td>
@@ -688,7 +698,7 @@ Ultra Divine Water (Modded Z-Item)<br>
 <td>Like the case with Customized Soundtrack (Version 1), this mod will only work for vanilla ISO's.
 <br>It adds a new Z-Item that increases all stats by 7.5% for each health bar (10000 HP) lost, 
 <br>but the chosen fighter will have to start out the battle with one health bar less.</td>
-<td><a href="https://mega.nz/file/2H53WQTR#KdQCY2GYdZ5SRbSYqo-_pzKVjWE1mJde_ycH0bEvKWI">Click here!</a></td>
+<td><a class="dl-button" target="_blank" href="https://mega.nz/file/2H53WQTR#KdQCY2GYdZ5SRbSYqo-_pzKVjWE1mJde_ycH0bEvKWI"><img class="shenron" src="img\download.png" alt="DL">DOWNLOAD</a></td>
 </tr>
 <tr>
 <td>2020/07/11</td>
@@ -699,9 +709,9 @@ Custom Special Quotes<br>(Vive vs. Great Ape Baby)<br>
 <embed src="https://www.youtube.com/embed/9ATms7B4dTo" wmode="transparent" type="video/mp4" width="100%" height="100%" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen title="Custom Special Quotes">
 </div>
 </td>
-<td>This mod will only work for <a href="https://www.youtube.com/watch?v=jMBZHT9c29w">Modding Revolution</a>, since my self-insert is exclusive to that ISO.
+<td>This mod will only work for <a class="other-links" href="https://www.youtube.com/watch?v=jMBZHT9c29w">Modding Revolution</a>, since my self-insert is exclusive to that ISO.
 <br>As shown in the video, it allows Vive to reach an existential crisis upon encountering the Golden Oozaru.</td>
-<td><a href="https://mega.nz/file/uKAAyIRZ#T0yuDqMIwuzvAk8XcfqUZZ5_ABGqx_h3Vyfi6KnC7oU">Click here!</a></td>
+<td><a class="dl-button" target="_blank" href="https://mega.nz/file/uKAAyIRZ#T0yuDqMIwuzvAk8XcfqUZZ5_ABGqx_h3Vyfi6KnC7oU"><img class="shenron" src="img\download.png" alt="DL">DOWNLOAD</a></td>
 </tr>
 <tr>
 <td>2020/08/04</td>
@@ -715,7 +725,7 @@ Goku Strikes Back (Modded Scenario)<br>
 <br>Because of the great difference in power, Future Trunks is able to easily take care of him.
 <br>Also, at the beginning of the scenario, Demon King Piccolo doesn't start out with super armor.
 <br>However, upon the activation of the 1st R3 event, that effect comes back.</td>
-<td><a href="https://mega.nz/file/GXxXCLaJ#C0ll9uer3VuKm6wHP-ex5Ri0LFSgCoIEc6JZi_2X2oo">Click here!</a></td>
+<td><a class="dl-button" target="_blank" href="https://mega.nz/file/GXxXCLaJ#C0ll9uer3VuKm6wHP-ex5Ri0LFSgCoIEc6JZi_2X2oo"><img class="shenron" src="img\download.png" alt="DL">DOWNLOAD</a></td>
 </tr>
 <tr>
 <td>2020/08/09</td>
@@ -728,7 +738,7 @@ Meteor Smash (Custom Assist Rush)<br>
 </td>
 <td>Changes Super Saiyan Goku (Mid)'s Meteor Smash so that Super Saiyan Vegeta shows up
 <br>during the beginning of the attack, but not the end, since the rush cuts out prematurely.</td>
-<td><a href="https://mega.nz/file/3aZnEI7B#MyjBdupMiFVRyAvPkL4lNZE4-5pvF5ctdhb1xru05BE">Click here!</a></td>
+<td><a class="dl-button" target="_blank" href="https://mega.nz/file/3aZnEI7B#MyjBdupMiFVRyAvPkL4lNZE4-5pvF5ctdhb1xru05BE"><img class="shenron" src="img\download.png" alt="DL">DOWNLOAD</a></td>
 </tr>
 <tr>
 <td>2020/08/25</td>
@@ -741,7 +751,7 @@ Custom Special Quotes<br>(Ultimate Gohan vs. Buutenks)<br>
 </td>
 <td>Allows Ultimate Gohan and Buutenks to interact with one-another, just like in the anime.
 <br>For comedic effect, their entrance animations have been changed to that of Goku (Early) and Vegeta (Scouter)'s.</td>
-<td><a href="https://mega.nz/file/iGY0RSzI#piFHPQoNIiJCjYfkE4w8o_reM0SwKvnj9cr74a6IIZg">Click here!</a></td>
+<td><a class="dl-button" target="_blank" href="https://mega.nz/file/iGY0RSzI#piFHPQoNIiJCjYfkE4w8o_reM0SwKvnj9cr74a6IIZg"><img class="shenron" src="img\download.png" alt="DL">DOWNLOAD</a></td>
 </tr>
 <tr>
 <td>2020/08/29</td>
@@ -754,7 +764,7 @@ Voice Pack for Ultra Instinct Goku<br>
 </td>
 <td>Replaces Super Saiyan 4 Goku (GT)'s "talkative" voice lines with empty ones,
 <br>and backs up the rest of the screams with low-pitched Great Ape screams.</td>
-<td><a href="https://mega.nz/file/eXhRmQzD#W1vU1yMu3-If2jZjrOCt_MUi5wLMSc5A95BhSfQwnSo">Click here!</a></td>
+<td><a class="dl-button" target="_blank" href="https://mega.nz/file/eXhRmQzD#W1vU1yMu3-If2jZjrOCt_MUi5wLMSc5A95BhSfQwnSo"><img class="shenron" src="img\download.png" alt="DL">DOWNLOAD</a></td>
 </tr>
 <tr>
 <td>2020/11/01</td>
@@ -766,7 +776,7 @@ Wasteland (Budokai Tenkaichi 2)<br>
 <td>Replaces Wasteland - Noon with the Budokai Tenkaichi 2 version of said map.
 <br>Because of the map portait being modified as well, this mod only works on vanilla ISOs.
 <br>For personalized/modified ISOs, the mod installation procedure will be different.</td>
-<td><a href="https://mega.nz/file/WbhQnA7D#U-gTgFOLAMjIvzbtvRen-U07igUtU0w11agbM-xZKco">Click here!</a></td>
+<td><a class="dl-button" target="_blank" href="https://mega.nz/file/WbhQnA7D#U-gTgFOLAMjIvzbtvRen-U07igUtU0w11agbM-xZKco"><img class="shenron" src="img\download.png" alt="DL">DOWNLOAD</a></td>
 </tr>
 <tr>
 <td>2020/11/06</td>
@@ -779,7 +789,7 @@ Customized Soundtrack (Version 2)<br>
 </td>
 <td>Much like the previous version, this mod only works on vanilla ISOs (unless personalized changes are made).
 <br>It now features the rest of the Budokai Tenkaichi 2 soundtrack, and not just 4 songs that I liked.</td>
-<td><a href="https://mega.nz/file/CaYWFB7K#3esO3JFAXjmK0lewm9nSXBt3SvXqLYEr5c-uEhTQwcc">Click here!</a></td>
+<td><a class="dl-button" target="_blank" href="https://mega.nz/file/CaYWFB7K#3esO3JFAXjmK0lewm9nSXBt3SvXqLYEr5c-uEhTQwcc"><img class="shenron" src="img\download.png" alt="DL">DOWNLOAD</a></td>
 </tr>
 <tr>
 <td>2020/11/20</td>
@@ -800,7 +810,7 @@ Tenkaichi 2 NPCs in Tenkaichi 3<br>
 <li>Fortuneteller Baba (as Babidi's 2nd costume).</li>
 </ol>
 </td>
-<td><a href="https://mega.nz/file/LD4hAAyQ#1fUbApE0TIDhGc8t36tcEyqeS1i2Dl8qSpD56mZYcnw">Click here!</a></td>
+<td><a class="dl-button" target="_blank" href="https://mega.nz/file/LD4hAAyQ#1fUbApE0TIDhGc8t36tcEyqeS1i2Dl8qSpD56mZYcnw"><img class="shenron" src="img\download.png" alt="DL">DOWNLOAD</a></td>
 </tr>
 <tr>
 <td>2021/02/03</td>
@@ -812,7 +822,7 @@ Quiet Rage (Modded Blast 2) and<br>One-Handed Father-Son Kamehameha V2<br>
 <td>Replaces Super Saiyan 2 Teen Gohan's Gekiretsu Madan with a recreation of his rush from Raging Blast 1/2.
 <br>Also includes the 2nd and last version of One-Handed Father-Son Kamehameha.
 <br>Unlike the previous version, it only uses Future Gohan animations. Actually, both of these mods do.</td>
-<td><a href="https://mega.nz/file/WKR1GaSZ#3ebbAhsimikbdnNR3NRVu3DcaAr47o9RAic0fPHpXJs">Click here!</a></td>
+<td><a class="dl-button" target="_blank" href="https://mega.nz/file/WKR1GaSZ#3ebbAhsimikbdnNR3NRVu3DcaAr47o9RAic0fPHpXJs"><img class="shenron" src="img\download.png" alt="DL">DOWNLOAD</a></td>
 </tr>
 <tr>
 <td>2021/02/03</td>
@@ -824,7 +834,7 @@ Gotenks (Remastered)<br>
 <td>Replaces Gotenks's 2nd costume with a Gogeta-themed recolor, and gives Gotenks new Special Attacks
 <br>for his base (Victory Crash & Big Tree Kamehameha) and Super Saiyan 3 forms (Super Kamehameha).
 <br>Also swaps the animations used for Super Saiyan 1/3 Gotenks's False Courage and Finish Sign.</td>
-<td><a href="https://mega.nz/file/XK4l1QrI#xgN0hBLSw9_aB6LqXHB0vm94fALFZvgZjDLzzpKRLGA">Click here!</a></td>
+<td><a class="dl-button" target="_blank" href="https://mega.nz/file/XK4l1QrI#xgN0hBLSw9_aB6LqXHB0vm94fALFZvgZjDLzzpKRLGA"><img class="shenron" src="img\download.png" alt="DL">DOWNLOAD</a></td>
 </tr>
 <tr>
 <td>2021/04/24</td>
@@ -834,7 +844,7 @@ Hyperhyperbolic Time Chamber<br>
 <div class="tooltip-content"><img class="preview" src="img\prev-59.png" alt="Hyperhyperbolic Time Chamber"></div>
 </td>
 <td>Extends Hyperbolic Time Chamber's barriers to the point where the barrier texture doesn't even show up.</td>
-<td><a href="https://mega.nz/file/aCJQWRxC#vMRTJk-uOL4bOcD_hz2Uny1y3q1qtVZ_26k8ztI_b-c">Click here!</a></td>
+<td><a class="dl-button" target="_blank" href="https://mega.nz/file/aCJQWRxC#vMRTJk-uOL4bOcD_hz2Uny1y3q1qtVZ_26k8ztI_b-c"><img class="shenron" src="img\download.png" alt="DL">DOWNLOAD</a></td>
 </tr>
 <tr>
 <td>2021/04/28</td>
@@ -843,9 +853,9 @@ Hyperhyperbolic Time Chamber<br>
 Mecha Frieza with Green/Red Scouter<br>
 <div class="tooltip-content"><img class="preview" src="img\prev-60.png" alt="Mecha Frieza with Green/Red Scouter"></div>
 </td>
-<td>Design inspired by <a href="https://twitter.com/nicocolors/status/1386077489672474629">nicocolors's lock screen on Twitter</a>.
+<td>Design inspired by <a class="other-links" href="https://twitter.com/nicocolors/status/1386077489672474629">nicocolors's lock screen on Twitter</a>.
 <br>Gives Mecha Frieza a fully-working scouter that comes in green (costume 2) or red (costume 3).</td>
-<td><a href="https://mega.nz/file/WT4EHChJ#7twSZZjkNOGmb9hyr3plUITwn-h-94D9KX_W4jOL4Sc">Click here!</a></td>
+<td><a class="dl-button" target="_blank" href="https://mega.nz/file/WT4EHChJ#7twSZZjkNOGmb9hyr3plUITwn-h-94D9KX_W4jOL4Sc"><img class="shenron" src="img\download.png" alt="DL">DOWNLOAD</a></td>
 </tr>
 <tr>
 <td>2021/05/07</td>
@@ -867,7 +877,7 @@ Tenkaichi-Styled Enhanced Costumes<br>
 <li>Broly.</li>
 </ol>
 </td>
-<td><a href="https://mega.nz/file/DHBhRAKC#vKEzfvaHq9EwEz0DidO1HGZhvCwmXXJCk27VWZsZQt0">Click here!</a></td>
+<td><a class="dl-button" target="_blank" href="https://mega.nz/file/DHBhRAKC#vKEzfvaHq9EwEz0DidO1HGZhvCwmXXJCk27VWZsZQt0"><img class="shenron" src="img\download.png" alt="DL">DOWNLOAD</a></td>
 </tr>
 <tr>
 <td>2021/10/31</td>
@@ -878,7 +888,7 @@ Nappa (All Main Forms)<br>
 </td>
 <td>A modpack I made on Halloween to mock the living crap out of the "GOKU ALL FORMS CHETADO" YouTube trend.
 <br>There are two versions of this modpack: one with Nappa's Battle Armor, and the other without it.</td>
-<td><a href="https://mega.nz/file/yGpQRJbL#NaEowDKVu2WKfUQisZmXOwcSQkPRLjs6b-ucwP90ipk">Click here!</a></td>
+<td><a class="dl-button" target="_blank" href="https://mega.nz/file/yGpQRJbL#NaEowDKVu2WKfUQisZmXOwcSQkPRLjs6b-ucwP90ipk"><img class="shenron" src="img\download.png" alt="DL">DOWNLOAD</a></td>
 </tr>
 <tr>
 <td>2022/01/02</td>
@@ -909,7 +919,7 @@ No Holds Barred (Tenkaichi 2 Modpack)<br>
 *These costumes are not able to fly.<br>
 **These costumes have their own transformations.
 </td>
-<td><a href="https://mega.nz/file/nCZxCZQa#DI-HttDg_ICB7uUmByVkhs9LMQ3j4btXhuN4NhPY3ag">Click here!</a></td>
+<td><a class="dl-button" target="_blank" href="https://mega.nz/file/nCZxCZQa#DI-HttDg_ICB7uUmByVkhs9LMQ3j4btXhuN4NhPY3ag"><img class="shenron" src="img\download.png" alt="DL">DOWNLOAD</a></td>
 </tr>
 <tr>
 <td>2022/04/01</td>
@@ -920,7 +930,7 @@ Flame Shower Bruuuh (Modded Blast 2)<br>
 </td>
 <td>A mod I made on April Fools, once again to make fun of the clickbait Dragon Ball YouTubers rely on.
 <br>The premise is that the VFX are kinda brown, and they now come out of Evil Buu's butt instead of his mouth.</td>
-<td><a href="https://mega.nz/file/GPgz2RbD#fEZc_xaiGjQQJgFRE6-3tSKVKFU9QBaTElYFYz0zN0o">Click here!</a></td>
+<td><a class="dl-button" target="_blank" href="https://mega.nz/file/GPgz2RbD#fEZc_xaiGjQQJgFRE6-3tSKVKFU9QBaTElYFYz0zN0o"><img class="shenron" src="img\download.png" alt="DL">DOWNLOAD</a></td>
 </tr>
 <tr>
 <td>2022/05/28</td>
@@ -931,8 +941,8 @@ Multiverse Tournament Stage<br>
 </td>
 <td>Because of the map selection images and all that, this mod only works on vanilla ISOs,
 <br>unless you either customize the mod yourself or install just the map files and nothing else.
-<br>Original mod made by <a href="https://kinnikuchu.com">Chuchoman/Kinnikuchu</a>.</td>
-<td><a href="https://mega.nz/file/vOAGGCBC#n-lWMhKi2Pa51h7U6hemxaWqI0XyIaekTPfO70yPA94">Click here!</a></td>
+<br>Original mod made by <a class="other-links" href="https://kinnikuchu.com">Chuchoman/Kinnikuchu</a>.</td>
+<td><a class="dl-button" target="_blank" href="https://mega.nz/file/vOAGGCBC#n-lWMhKi2Pa51h7U6hemxaWqI0XyIaekTPfO70yPA94"><img class="shenron" src="img\download.png" alt="DL">DOWNLOAD</a></td>
 </tr>
 <tr>
 <td>2022/07/02</td>
@@ -942,7 +952,7 @@ Change The Future (Modded Blast 2)<br>
 <div class="tooltip-content"><img class="preview" src="img\prev-64.png" alt="Change The Future (Modded Blast 2)"></div>
 </td>
 <td>Replaces Super Saiyan Trunks (Sword)'s Burning Storm with a recreation of his rush from the Raging Blast series.</td>
-<td><a href="https://mega.nz/file/DOZCzb6A#fNWtDMYrsEygPCfDHoK3mj7oIfMDbKRhi7gco39qjkQ">Click here!</a></td>
+<td><a class="dl-button" target="_blank" href="https://mega.nz/file/DOZCzb6A#fNWtDMYrsEygPCfDHoK3mj7oIfMDbKRhi7gco39qjkQ"><img class="shenron" src="img\download.png" alt="DL">DOWNLOAD</a></td>
 </tr>
 <tr>
 <td>2022/07/28</td>
@@ -952,7 +962,7 @@ Fusion vs. Potara (Modded Scenario)<br>
 <div class="tooltip-content"><img class="preview" src="img\prev-65.png" alt="Fusion vs. Potara (Modded Scenario)"></div>
 </td>
 <td>Replaces Dream Battle: Goku vs. Arale with a recreation of the Fusion and Potara scenario from Raging Blast 1.</td>
-<td><a href="https://mega.nz/file/rTJHQYpY#YPP5qDG-on5DTJaoyHuL7kT2QU9h8BvWT3DQCneIAqA">Click here!</a></td>
+<td><a class="dl-button" target="_blank" href="https://mega.nz/file/rTJHQYpY#YPP5qDG-on5DTJaoyHuL7kT2QU9h8BvWT3DQCneIAqA"><img class="shenron" src="img\download.png" alt="DL">DOWNLOAD</a></td>
 </tr>
 <tr>
 <td>2022/09/02</td>
@@ -963,7 +973,7 @@ Unexpected Help (Modded Scenario)<br>
 </td>
 <td>Allows you to play as Trunks (Sword) instead of Devilman in Unexpected Help. 
 <br>Everything else takes off from there, because many changes have been made to the scenario's structure.</td>
-<td><a href="https://mega.nz/file/rTJHQYpY#YPP5qDG-on5DTJaoyHuL7kT2QU9h8BvWT3DQCneIAqA">Click here!</a></td>
+<td><a class="dl-button" target="_blank" href="https://mega.nz/file/rTJHQYpY#YPP5qDG-on5DTJaoyHuL7kT2QU9h8BvWT3DQCneIAqA"><img class="shenron" src="img\download.png" alt="DL">DOWNLOAD</a></td>
 </tr>
 <tr>
 <td>2022/09/24</td>
@@ -994,7 +1004,7 @@ Sparking of the Dawn - SDBZ Tribute
 Keep in mind that the modpack comes with instructions, as well as a gallery to help distinguish the recolors.
 <br>Obviously, because Budokai Tenkaichi 2's costume limit is set to 6, there will be more recolors for that game.
 </td>
-<td><a href="https://mega.nz/file/nCZxCZQa#DI-HttDg_ICB7uUmByVkhs9LMQ3j4btXhuN4NhPY3ag">Click here!</a></td>
+<td><a class="dl-button" target="_blank" href="https://mega.nz/file/nCZxCZQa#DI-HttDg_ICB7uUmByVkhs9LMQ3j4btXhuN4NhPY3ag"><img class="shenron" src="img\download.png" alt="DL">DOWNLOAD</a></td>
 </tr>
 <tr>
 <td>2023/01/29</td>
@@ -1003,10 +1013,10 @@ Keep in mind that the modpack comes with instructions, as well as a gallery to h
 Cooler's Armored Squadron<br>
 <div class="tooltip-content"><img class="preview" src="img\prev-67.png" alt="Cooler's Armored Squadron"></div>
 </td>
-<td>In <a href="https://www.youtube.com/watch?v=5UghKy5Iruk">my video showcasing the mods</a>, I replaced Slug and Giant Slug. 
+<td>In <a class="other-links" href="https://www.youtube.com/watch?v=5UghKy5Iruk">my video showcasing the mods</a>, I replaced Slug and Giant Slug. 
 <br>However, since the modpack comes with instructions, you'll have to decide the replaced characters on your own.
 <br>Although Neiz and Dore are the stars of the show, Salza's animations have been replaced with Tenkaichi 2 ones.</td>
-<td><a href="https://mega.nz/file/jL4RwIAJ#QJ7yVxZF_WfYz-ChvJ8P0yxdLfbb4pQpCW_I8KApf7U">Click here!</a></td>
+<td><a class="dl-button" target="_blank" href="https://mega.nz/file/jL4RwIAJ#QJ7yVxZF_WfYz-ChvJ8P0yxdLfbb4pQpCW_I8KApf7U"><img class="shenron" src="img\download.png" alt="DL">DOWNLOAD</a></td>
 </tr>
 <tr>
 <td>2023/02/05</td>
@@ -1018,7 +1028,7 @@ Gokule (Goku and Hercule Fusion)<br>
 <td>Although the mod comes with instructions, it has to replace Spopovich (unless you know what you're doing).
 <br>Includes the costume files for Goku (End) and Hercule, since those are needed for the fusion sequence to work.
 <br>Otherwise, you can choose to install just the what-if fusion from Budokai 2 and nothing else.</td>
-<td><a href="https://mega.nz/file/bD5l3C6S#WhwQSUv-9lSJL43a9TgJYXT5ptromZxbZso12K4he4A">Click here!</a></td>
+<td><a class="dl-button" target="_blank" href="https://mega.nz/file/bD5l3C6S#WhwQSUv-9lSJL43a9TgJYXT5ptromZxbZso12K4he4A"><img class="shenron" src="img\download.png" alt="DL">DOWNLOAD</a></td>
 </tr>
 </tbody>
 </table>

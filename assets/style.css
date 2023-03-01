@@ -1,5 +1,5 @@
 body {
-  background-color: rgb(54, 57, 63);
+  background-color: #323b52;
   font-family: Tahoma, Geneva, sans-serif;
   color: white;
 }
@@ -13,6 +13,10 @@ img {
 .preview {
   width: 95%;
 }
+.shenron {
+  width: 28%;
+  vertical-align:middle;
+}
 
 /* header styles */
 .header-txt {
@@ -20,32 +24,36 @@ img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  -webkit-text-fill-color: #3bfcf9;
 }
 .header {
   position: relative;
   text-align: center;
 }
-.h1-txt {
+h1 {
   font-size: 3.5vw;
+  margin-top: 0.4vw;
+  margin-bottom: 0.15vw;
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke: 1.5px #10f3ca;
 }
 h2 {
-  font-size: 1.2vw;
+  font-size: 0.9vw;
   font-weight: normal;
-  -webkit-text-fill-color: #3bfcf9;
+  margin-top: 0.4vw;
+  margin-bottom: 1.2vw;
 }
 
 /* zebra stripes for table */
 tr:nth-child(even) {
-  background-color: #8a3b86;
+  background-color: #2f7873;
 }
 
 tr:nth-child(odd) {
-  background-color: #b04081;
+  background-color: #40958b;
 }
 th {
-  background-color: #68095a;
+  background-color: #2d6069;
 }
 
 /* width adjustments for each column of the table*/
@@ -61,14 +69,17 @@ td:nth-child(3) {
 td:nth-child(4) {
 	width: 46%;
 	text-align: left;
+	padding: 0.5vw 0.5vw 0.5vw 0.5vw;
 }
 td:nth-child(5) {
 	width: 12%;
+	padding-top: 0.5vw;
+	padding-bottom: 0.5vw;
 }
 
 /* general table styles */
 table, th, td {
-  border: 2px solid #68095a;
+  border: 2px solid #2d6069;
   border-collapse: collapse;
   text-align: center;
   margin-left: auto;
@@ -111,13 +122,36 @@ table {
   visibility: visible;
 }
 
+/* styles that turn the download links into buttons */
+.dl-button {
+  /* font adjustments */
+  font-family: Tahoma, Geneva, sans-serif;
+  text-decoration: none;
+  text-align: center;
+  font-size: 0.95vw;
+  font-weight: bold;
+  color: #cbcbcb;
+  /* background and borders */
+  background: linear-gradient(#1e3e55 0%, #2a5b7d 25%, #35719d 50%, #2a5b7d 75%, #1e3e55 100%);
+  border-radius: 15px;
+  border: 2px solid #fafafa;
+  /* general settings */  
+  width: 78%;
+  padding: 5px 5px;
+  display: inline-block;
+}
+.dl-button:hover {
+  background: linear-gradient(#4f9eae 0%, #60b2c1 25%, #75c5d5 50%, #60b2c1 75%, #4f9eae 100%);
+  color: #e4ca02;
+}
+
 /* hyperlink styles */
-a:link {
+.other-links:link {
   color: #e4ca02;
   text-decoration: none;
   font-weight: bold;
 }
-a:visited {
+.other-links:visited {
   color: #ff9d2d;
   text-decoration: none;
   font-weight: bold;
@@ -126,4 +160,40 @@ a:visited {
 /* position adjustment for items on ordered list */
 li {
   margin-left: -0.3vw;
+}
+
+/* searchbar style */
+#searchbar { 
+  /* rounded borders */
+  border: 1px solid #323b52;
+  border-radius: 15px;
+  padding: 10px 10px 10px 20px;
+  /* margin adjustments */
+  margin-top: 0.7vw;
+  margin-bottom: 0.7vw;
+  margin-left: 1vw;
+  /* adjust searchbar size based on the window size */
+  object-fit: cover;
+  object-position: bottom;
+  /* change font color, size and family */
+  font-size: 1vw;
+  font-family: Tahoma, Geneva, sans-serif;
+  color: #e4ca02;
+  /* set background to gradient, then adjust width */
+  background: linear-gradient(#8b7aa1 0%, #9486a7 25%, #a397b3 50%, #c8bcd6 100%);
+  width: 45%;
+}
+
+.filter {
+  text-align: center;
+
+}
+/* disable outline around all input boxes */
+input:focus {
+  outline: none;
+}
+/* placeholder text style */
+::placeholder {
+  color: #5a5971;
+  opacity: 1; /* Firefox always lowers opacity of placeholder text, so setting it to 1 will prevent that */
 }
