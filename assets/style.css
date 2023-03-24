@@ -17,6 +17,12 @@ img {
   width: 28%;
   vertical-align:middle;
 }
+.ribbon {
+  width: 12.5%; 
+  margin-bottom: -0.8vw; 
+  border: 3px solid #11a59a; 
+  border-radius: 4%;
+}
 
 /* header styles */
 .header-txt {
