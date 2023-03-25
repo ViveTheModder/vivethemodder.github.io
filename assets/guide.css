@@ -102,9 +102,16 @@ a {
   display: inline;
 }
 
+/* italic text style - well, not so italic now that it has different formating */
 i {
   font-style: normal;
   font-family: monospace;
   font-size: 1vw;
   background-color: #54002b;
+}
+
+/* horizontal rule */
+hr {
+  border-width: 5px;
+  color: #b20d42;
 }
