@@ -152,17 +152,21 @@ table {
 }
 
 /* hyperlink styles */
-.other-links:link {
+.desc-links:link {
   color: #e4ca02;
   text-decoration: none;
   font-weight: bold;
 }
-.other-links:visited {
+.desc-links:visited {
   color: #ff9d2d;
   text-decoration: none;
   font-weight: bold;
 }
-
+.video-links:link, .video-links:visited {
+  color: #bd3944;
+  text-decoration: none;
+  font-weight: bold;
+}
 /* position adjustment for items on ordered list */
 li {
   margin-left: -0.3vw;
