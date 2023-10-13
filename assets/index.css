@@ -23,6 +23,11 @@ img {
   border: 3px solid #11a59a; 
   border-radius: 4%;
 }
+.video {
+  width: 7.5%;
+  height: 7.5%;
+  margin-bottom: -0.2vw;
+}
 
 /* header styles */
 .header-txt {
@@ -162,10 +167,10 @@ table {
   text-decoration: none;
   font-weight: bold;
 }
-.video-links:link, .video-links:visited {
-  color: #bd3944;
-  text-decoration: none;
+.video-links {
+  color: #70bdf1;
   font-weight: bold;
+  font-size: 0.8vw; 
 }
 /* position adjustment for items on ordered list */
 li {
