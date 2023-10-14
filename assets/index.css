@@ -170,7 +170,7 @@ table {
 .video-links {
   color: #70bdf1;
   font-weight: bold;
-  font-size: 0.8vw; 
+  font-size: 95%; 
 }
 /* position adjustment for items on ordered list */
 li {
