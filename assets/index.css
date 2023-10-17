@@ -4,6 +4,11 @@ body {
   color: white;
 }
 
+li {  /* position adjustment for items on ordered list */
+  margin-left: -0.3vw;
+}
+
+/* IMAGE STYLES */
 img {
   width: 100%;
   /* adjust image size based on the window size */
@@ -24,20 +29,19 @@ img {
   border-radius: 4%;
 }
 .video {
-  width: 7.5%;
-  height: 7.5%;
+  width: 1vw;
   margin-bottom: -0.2vw;
 }
 
-/* header styles */
-.header-txt {
+/* HEADER STYLES */
+#header-txt {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   -webkit-text-fill-color: #3bfcf9;
 }
-.header {
+#header {
   position: relative;
   text-align: center;
 }
@@ -55,40 +59,7 @@ h2 {
   margin-bottom: 1.2vw;
 }
 
-/* zebra stripes for table */
-tr:nth-child(even) {
-  background-color: #2f7873;
-}
-
-tr:nth-child(odd) {
-  background-color: #40958b;
-}
-th {
-  background-color: #2d6069;
-}
-
-/* width adjustments for each column of the table*/
-td:nth-child(1) {
-	width: 12%;
-}
-td:nth-child(2) {
-	width: 12%;
-}
-td:nth-child(3) {
-	width: 18%;
-}
-td:nth-child(4) {
-	width: 46%;
-	text-align: left;
-	padding: 0.5vw 0.5vw 0.5vw 0.5vw;
-}
-td:nth-child(5) {
-	width: 12%;
-	padding-top: 0.5vw;
-	padding-bottom: 0.5vw;
-}
-
-/* general table styles */
+/* TABLE STYLES */
 table, th, td {
   border: 2px solid #2d6069;
   border-collapse: collapse;
@@ -97,11 +68,44 @@ table, th, td {
   margin-right: auto;
 }
 table {
-  width: 98%;
+  width: 98vw;
   overflow-x: auto;
 }
+tr:nth-child(even) {
+  background-color: #2f7873;
+}
+tr:nth-child(odd) {
+  background-color: #40958b;
+}
+th {
+  background-color: #2d6069;
+}
+/* table cells that contain video links */
+.video-links {
+  color: #70bdf1;
+  font-weight: bold;
+  font-size: 95%; 
+}
 
-/* basic tooltip (thanks w3schools) */
+/* TABLE COLUMN WIDTH ADJUSTMENTS*/
+td:nth-child(1), td:nth-child(2) {
+	width: 12vw;
+}
+td:nth-child(3) {
+	width: 18vw;
+}
+td:nth-child(4) {
+	width: 46vw;
+	text-align: left;
+	padding: 0.5vw 0.5vw 0.5vw 0.5vw;
+}
+td:nth-child(5) {
+	width: 12vw;
+	padding-top: 0.5vw;
+	padding-bottom: 0.5vw;
+}
+
+/* TOOLTIP STYLES */
 .tooltip {
   position: relative;
 }
@@ -112,7 +116,6 @@ table {
   border-radius: 6px;
   padding: 15px 5px 15px 5px;
   
-  /* tooltip positioning */
   position: absolute;
   z-index: 1; /* this assures no text goes over the image */
   top: 80%;
@@ -129,85 +132,70 @@ table {
   border-style: solid;
   border-color: transparent transparent #31347d transparent;
 }
-.tooltip:hover .tooltip-content { /* make tooltip visible when hovering over table cells */
+.tooltip:hover .tooltip-content {
   visibility: visible;
 }
 
-/* styles that turn the download links into buttons */
-.dl-button {
-  /* font adjustments */
+/* DOWNLOAD BUTTON STYLES */
+td:nth-child(5) a {
   font-family: Tahoma, Geneva, sans-serif;
-  text-decoration: none;
-  text-align: center;
   font-size: 0.95vw;
   font-weight: bold;
+  text-decoration: none;
+  text-align: center;
   color: #cbcbcb;
-  /* background and borders */
+  
   background: linear-gradient(#1e3e55 0%, #2a5b7d 25%, #35719d 50%, #2a5b7d 75%, #1e3e55 100%);
   border-radius: 15px;
   border: 2px solid #fafafa;
-  /* general settings */  
+  
   width: 78%;
   padding: 5px 5px;
   display: inline-block;
 }
-.dl-button:hover {
+td:nth-child(5) a:hover {
   background: linear-gradient(#4f9eae 0%, #60b2c1 25%, #75c5d5 50%, #60b2c1 75%, #4f9eae 100%);
   color: #e4ca02;
 }
 
-/* hyperlink styles */
-.desc-links:link {
+/* HYPERLINK STYLES */
+td:nth-child(4) a:link {
   color: #e4ca02;
   text-decoration: none;
   font-weight: bold;
 }
-.desc-links:visited {
+td:nth-child(4) a:visited {
   color: #ff9d2d;
   text-decoration: none;
   font-weight: bold;
 }
-.video-links {
-  color: #70bdf1;
-  font-weight: bold;
-  font-size: 95%; 
-}
-/* position adjustment for items on ordered list */
-li {
-  margin-left: -0.3vw;
-}
 
-/* searchbar style */
+/* SEARCHBAR STYLES */
 #searchbar { 
-  /* rounded borders */
   border: 1px solid #323b52;
   border-radius: 15px;
   padding: 10px 10px 10px 20px;
-  /* margin adjustments */
+  
   margin-top: 0.7vw;
   margin-bottom: 0.7vw;
   margin-left: 1vw;
-  /* adjust searchbar size based on the window size */
+  
   object-fit: cover;
   object-position: bottom;
-  /* change font color, size and family */
+  
   font-size: 1vw;
   font-family: Tahoma, Geneva, sans-serif;
   color: #e4ca02;
-  /* set background to gradient, then adjust width */
+  
   background: linear-gradient(#8b7aa1 0%, #9486a7 25%, #a397b3 50%, #c8bcd6 100%);
   width: 45%;
 }
-
 .filter {
   text-align: center;
-
 }
-/* disable outline around all input boxes */
 input:focus {
   outline: none;
 }
-/* placeholder text style */
 ::placeholder {
   color: #5a5971;
   opacity: 1; /* Firefox always lowers opacity of placeholder text, so setting it to 1 will prevent that */
