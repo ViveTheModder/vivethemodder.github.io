@@ -4,6 +4,8 @@ body {
   color: white;
   text-align: center;
 }
+
+/* IMAGE STYLES */
 img {
   width: 100%;
   /* adjust image size based on the window size */
@@ -24,17 +26,29 @@ img {
   border-radius: 4%;
 }
 
-/* header styles */
-.header-txt {
+/* TEXT STYLES */
+a {
+  text-decoration: none;
+  color: #e43f17;
+  display: inline;
+}
+span {
+  font-family: monospace;
+  font-size: 1vw;
+  background-color: #54002b;
+}
+
+/* HEADER STYLES */
+#header {
+  position: relative;
+  text-align: center;
+}
+#header-txt {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: #e5d352;
-}
-.header {
-  position: relative;
-  text-align: center;
 }
 h1 {
   font-size: 3.5vw;
@@ -56,8 +70,12 @@ h3 {
    margin-top: 1vw;
    margin-bottom: -1.25vw;
 }
+hr {
+  border-width: 5px;
+  color: #b20d42;
+}
 
-/* prompt styles */
+/* PROMPT STYLES */
 .prompt-txt {
   position: absolute;
   top: 50%;
@@ -72,12 +90,16 @@ h3 {
   display: inline-block;
 }
 
-/* description list style */
+/* LIST STYLES */
 dl {
   color: #d44f36;
   font-size: 1.3vw;
   font-weight: bold;
   margin-bottom: 0.3vw;
+}
+ul {
+  list-style-position: inside;
+  list-style-type: square;
 }
 dt {
   margin-top: 0.3vw;
@@ -87,31 +109,4 @@ dd {
   font-style: italic;
   font-size: 0.8vw;
   margin-left: -0.5vw;
-}
-
-/* unordered list style */
-ul {
-  list-style-position: inside;
-  list-style-type: square;
-}
-
-/* hyperlink style */
-a {
-  text-decoration: none;
-  color: #e43f17;
-  display: inline;
-}
-
-/* italic text style - well, not so italic now that it has different formating */
-i {
-  font-style: normal;
-  font-family: monospace;
-  font-size: 1vw;
-  background-color: #54002b;
-}
-
-/* horizontal rule */
-hr {
-  border-width: 5px;
-  color: #b20d42;
 }
