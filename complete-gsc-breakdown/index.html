@@ -1,0 +1,1124 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Complete GSC Breakdown</title>
+        <link rel="stylesheet" href="res\index.css">
+        <link rel="icon" href="res\index.ico">
+        <!-- embed metadata -->
+        <meta content="Complete GSC Breakdown" property="og:title"/>
+        <meta content="The most up-to-date analytical research of Dragon History scenarios in Budokai Tenkaichi 3." property="og:description"/>
+        <meta content="https://embed.com/vivethemodder.github.io/complete-gsc-breakdown" property="og:url"/>
+        <meta content="img\embed.png" property="og:image"/>
+        <meta content="#fc9f69" data-react-helmet="true" name="theme-color"/>
+        <meta name="twitter:card" content="summary_large_image">
+        <!-- additional metadata for better search results -->
+        <meta name="description" content="The most up-to-date analytical research of Dragon History scenarios in Budokai Tenkaichi 3.">
+        <meta name="keywords" content="Budokai Tenkaichi 3, Tenkaichi 3, DBZBT3, Modding, Dragon History, ViveTheModder, Vras28, MetalFrieza3000, pxgamer13, Raide">
+        <meta name="author" content="ViveTheModder, Vras28, MetalFrieza3000, pxgamer13, Raide">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div>
+            <span id="title">Contents</span>
+            <ol>
+                <li><a href="#ACK">Acknowledgments</a></li>
+                <li><a href="#INTRO">Introduction</a></li>
+                <li><a href="#BASICS">Basic Concepts</a></li>
+                <li><a href="#GSACvsGSDT">GSAC-GSDT Relation</a></li>
+                <li><a href="#INSTRUCT-PROPERTY">Instructions and Properties</a></li>
+                <li><a href="#PRELIM-SCENES">List of Preliminary Scenes</a></li>
+                <li>
+                    <a href="#FUNC-PROP-LIST">List of Functions and Properties</a> <span class="toggleText" onclick="toggleList(0)">[show]</span>
+                    <ul class="toggleUL">
+                        <li><a href="#FUNC-1">Function 1</a></li>
+                        <li><a href="#FUNC-2">Function 2</a></li>
+                        <li><a href="#FUNC-3">Function 3</a></li>
+                        <li><a href="#FUNC-4">Function 4</a></li>
+                        <li><a href="#FUNC-5">Function 5</a></li>
+                        <li><a href="#FUNC-6">Function 6</a></li>
+                        <li><a href="#FUNC-7">Function 7</a></li>
+                        <li><a href="#FUNC-8">Function 8</a></li>
+                        <li><a href="#FUNC-9">Function 9</a></li>
+                        <li><a href="#FUNC-10">Function 10</a></li>
+                        <li><a href="#FUNC-11">Function 11</a></li>
+                        <li><a href="#FUNC-12">Function 12</a></li>
+                        <li><a href="#FUNC-13">Function 13</a></li>
+                        <li><a href="#FUNC-14">Function 14</a></li>
+                        <li><a href="#FUNC-15">Function 15</a></li>
+                        <li><a href="#FUNC-16">Function 16</a></li>
+                        <li><a href="#FUNC-701">Function 701</a></li>
+                        <li><a href="#FUNC-702">Function 702</a></li>
+                        <li><a href="#FUNC-801">Function 801</a></li>
+                        <li><a href="#FUNC-802">Function 802</a></li>
+                        <li><a href="#FUNC-803">Function 803</a></li>
+                        <li><a href="#FUNC-804">Function 804</a></li>
+                        <li><a href="#FUNC-805">Function 805</a></li>
+                        <li><a href="#FUNC-806">Function 806</a></li>
+                        <li><a href="#FUNC-807">Function 807</a></li>
+                        <li><a href="#FUNC-808">Function 808</a></li>
+                        <li><a href="#FUNC-809">Function 809</a></li>
+                        <li><a href="#FUNC-810">Function 810</a></li>
+                        <li><a href="#FUNC-901">Function 901</a></li>
+                        <li><a href="#FUNC-902">Function 902</a></li>
+                        <li><a href="#FUNC-1001">Function 1001</a></li>
+                        <li><a href="#FUNC-1002">Function 1002</a></li>
+                        <li><a href="#FUNC-1003">Function 1003</a></li>
+                        <li><a href="#FUNC-1201">Function 1201</a></li>
+                        <li><a href="#FUNC-1202">Function 1202</a></li>
+                        <li><a href="#FUNC-1203">Function 1203</a></li>
+                        <li><a href="#FUNC-1204">Function 1204</a></li>
+                        <li><a href="#FUNC-1205">Function 1205</a></li>
+                        <li><a href="#FUNC-1301">Function 1301</a></li>
+                        <li><a href="#FUNC-1302">Function 1302</a></li>
+                        <li><a href="#FUNC-1501">Function 1501</a></li>
+                        <li><a href="#FUNC-1502">Function 1502</a></li>
+                        <li><a href="#FUNC-1601">Function 1601</a></li>
+                        <li><a href="#FUNC-1602">Function 1602</a></li>
+                        <li><a href="#FUNC-1603">Function 1603</a></li>
+                        <li><a href="#FUNC-1701">Function 1701</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#RESOURCES">Useful Resources</a> <span class="toggleText" onclick="toggleList(1)">[show]</span>
+                    <ul class="toggleUL">
+                        <li><a href="#BGM-TXT">BGM ID List</a></li>
+                        <li><a href="#CHARS-TXT">Character ID List</a></li>
+                        <li><a href="#COND-TXT">Condition ID List</a></li>
+                        <li><a href="#EVENT-TXT">Event ID List</a></li>
+                        <li><a href="#MAP-TXT">Map ID List</a></li>
+                        <li><a href="#ITEMS-TXT">Z-Item ID List</a></li>
+                    </ul>
+                </li>
+                <li><a href="#OUTRO">Conclusion</a></li>
+            </ol>
+        </div>
+        <h1 id="ACK">Acknowledgments</h1>
+        <p>
+            I would like to give my sincerest gratitude to <a href="https://www.youtube.com/channel/UCbxNxkkWMy7S1z4lZTCw0ow" target="_blank">Vras28</a> and <a href="https://www.youtube.com/@MetalFreezer3000" target="_blank">MetalFrieza3000</a> for being very understanding & trustworthy modders, and providing crystal clear explanations.<br>
+            In his initial research, Vras also thanked <a href="https://www.youtube.com/user/pxgamer13" target="_blank">pxgamer13</a> and <a href="https://www.youtube.com/channel/UCsI8NPm4-2FWqf_Oful5frQ" target="_blank">Raide Z</a>, and so will I.<br><br>
+            None of this would have ever been possible without such efforts.<br>
+            We would still be looking for <i>strings</i> and changing their <i>pointers</i>, one value at a time.<br>
+            They have all helped in the transition from <b>mechanical</b> to <b>logical</b> scenario analysis.     
+        </p>
+        <hr><h1 id="INTRO">Introduction</h1>
+        <p>
+            Before proceeding with the guide, it is highly recommended to have decent knowledge of the hexadecimal system, which is what <a href="https://cdn.discordapp.com/attachments/507641616060776448/1063565230250147932/2_-_Hex_explanation.pdf" target="_blank">NIM's guide</a> is all about.<br>
+            Given how the game was written in C (presumably), knowing a few programming basics would not hurt at all.<br><br>
+            <b>SPOILER: </b>The words <i>function</i>, <i>arguments</i>, <i>parameters</i>, <i>property</i>, <i>integer</i>, <i>float</i> and <i>string</i> will be thrown around a bunch, so watch out!
+        </p>
+        <hr><h1 id="BASICS">Basic Concepts</h1>
+        <p>
+            The following principles also apply to <b>Budokai Tenkaichi 2</b> and <b>Raging Blast 1</b>.<br>
+            Everything else, after the <a href="#GSACvsGSDT">GSAC-GSDT Relation</a>, is <b>exclusive to Budokai Tenkaichi 3.</b><br><br>
+            GSC files are divided into sections. Each section contains a 16-byte header and its data.<br>
+            Because GSC files are meant to be interpreted as scripts, said data can be treated as if it were <i>lines of code</i>.<br>
+            In this case, the <i>lines of code</i> are represented by a <i>series of bytes</i>.<br><br>
+            Back to the header, here are its contents:
+            <ul>
+                <li><b>Name</b> (a 4-byte string, stored at byte 0 of the header)</li>
+                <li><b>Header Size</b> (an integer, always to 16, stored at byte 4)</li>
+                <li><b>Data Size</b> (an integer, stored at byte 8)</li>
+                <li><b>ID</b> (an integer, mainly used for GSAC's, stored at byte 12)</li>
+            </ul>
+            The name of a section can be any of the following:
+            <ul>
+                <li><b>GSCF</b> (first section of the file, containing all other sections)</li>
+                <li><b>GSHD</b> (stores two integers representing the GSC version)</li>
+                <li><b>GSCD</b> (stores all GSAC's below it, until it reaches the GSDT)</li>
+                <li><b>GSAC</b> (unlike the rest, a section that is found numerous times)</li>
+                <li><b>EOFC</b> (end of section, indicated by EOF - End of File)</li>
+                <li><b>GSDT</b> (last section of the file; DT likely stands for Data)</li>
+            </ul>
+            The GSC version can take the following values:
+            <ul>
+                <li>3 & 1, representing <b>v3.1</b> of the GSC format (for Budokai Tenkaichi 2)</li>
+                <li>3 & 2, representing <b>v3.2</b> of the GSC format (for Budokai Tenkaichi 3)</li>
+                <li>3 & 3, representing <b>v3.3</b> of the GSC format (for Raging Blast 1)</li>
+            </ul>
+        </p>
+        <hr><h1 id="GSACvsGSDT">GSAC-GSDT Relation</h1>
+        <p>
+            To avoid confusion, <b>GSAC's</b> will be referred to as <b>scenes</b>, whereas the <b>GSDT</b> will be called <b>data</b>, because that is exactly what it is: <b>just data</b>. Nothing more to it.<br>
+            Nothing more than an unorganized set of integers and floats.<br>
+            Due to several scenes often reusing the same data, <u>changing the data directly</u> is <b>discouraged</b>, and so is <u>deleting data</u> or <u>adding already-existing data.</u><br>
+            Although, the latter is the <i>least harmful</i> out of the three.<br><br>
+            For the scenes to get the data in the first place, they make use of <b>parameters</b>. Each parameter consists of:
+            <ul>
+                <li>Data Type (<code class="r">0x0A</code> for integers, <code class="g">0x1A</code> for floats, <code class="b">0x2A</code> for strings)</li>
+                <li>Offset (address of input date relative to its section, divided by 4, stored as an unsigned short)</li>
+            </ul>
+            In layman terms, an offset with a value of 69 will link to the input data found in byte 276 of its section.<br>
+            If the section starts at byte 9008 of the GSC file, then the input data in question can be found at byte 9284.<br>
+            276 is far more readable than 9284, which is why the developers preferred to use relative addresses instead.<br>
+            As to why they chose to divide the addresses by 4, it was likely out of convenience, because ANM files use it too.<br><br>
+            <b>NOTE: </b>The <i>string</i> data type is never used, and was likely meant for <i>debugging purposes</i>.<br>
+            It can only be found in the last two GSC files (<code>GSC-B-48.gsc</code> and <code>GSC-B-49.gsc</code>), which are unfinished dummy files.<br>
+            Even the one string each GSC contains literally says <i>dummy</i> in Japanese (ダミー).           
+        </p>
+        <hr><h1 id="INSTRUCT-PROPERTY">Instructions and Properties</h1>
+        <p>
+            Instructions are stored in 4 bytes. These bytes represent its <b>arguments</b>.<br>
+            Depending on the instruction type, the preceding bytes may behave differently.<br>
+            Other than that, an instruction may or may not take parameters.<br>
+            It may or may not take <b>properties</b> as well, which also take parameters.<br><br>
+            Here is a hex interpretation of an instruction:<br>
+            <code class="gr">00 01 02 03</code><br>
+            <code><span class="r">XX</span> <span class="g">YY</span> <span class="b">ZZ ZZ</span></code><br><br>
+            The argument in <span class="r">red</span> represents the <u>instruction type</u>, which can take the following values:
+            <ul>
+                <li>01 (function call)</li>
+                <li>02 (scene call)</li>
+                <li>03 (unused, but very similar to 02)</li>
+            </ul>
+            The argument in <span class="g">green</span> represents the <u>number of arguments</u>.<br><br> 
+            For <span class="r">XX</span> set to <code>01</code>, the argument in <span class="b">blue</span> will refer to a function ID, stored as a short.<br>
+            If set to <code>02</code>, the instruction will look for a scene ID instead, also stored as a short.<br><br>
+            Properties are similar to instructions, except their instruction type is set to <code>08</code>, and they must always follow an instruction that needs it.<br><br>
+            Here is a hex interpretation of a property:<br>
+            <code class="gr">00 01 02 03</code><br>
+            <code>08 <span class="r">XX</span> <span class="b">YY</span> 00</code><br><br>
+            <span class="r">XX</span> represents the property type, stored as a character (symbol).<br>
+            For example, if set to <code>0x61</code>, the property type will be <span class="ch">a</span>, not 97.
+        </p>
+        <hr><h1 id="PRELIM-SCENES">List of Preliminary Scenes</h1>
+        <p>
+            The following scenes are found at the beginning of every GSC, in this exact order:
+            <ul>
+                <li>Scene -1 (<code>0xFFFFFFFF</code>)</li>
+                <li>Scene 1k (<code>0xE8030000</code>)</li>
+                <li>Scene -2 (<code>0xFEFFFFFF</code>)</li>
+                <li>Scene -3 (<code>0xFDFFFFFF</code>)</li>
+                <li>Scene -4 (<code>0xFCFFFFFF</code>)</li>
+                <li>Scene -5 (<code>0xFBFFFFFF</code>)</li>
+            </ul>
+            Without these, the scenario cannot function.
+        </p>
+        <hr><h1 id="FUNC-PROP-LIST">List of Functions and Properties</h1>
+        <p>
+            Please note that the functions have been listed in ascending order (smallest to biggest).<br> 
+            All given ID's are in decimal. For each function and property, there will be:
+            <ul>
+                <li>A hex interpretation (the bytes used for the instruction);</li>
+                <li>A brief description;</li>
+                <li>A location (what scenes it can be found in);</li>
+                <li>The parameters, if any are used.</li>
+            </ul>
+        </p>  
+        <h2 id="FUNC-1" class="r">Function 1</h2> <span class="toggleSrcText" onclick="toggleImg(0)">[view source code]</span> 
+        <img class="toggleSrc" src="img\func-0001.png">
+        <dl>
+            <dt>Hex Interpretation</dt>
+            <dd><code class="r">0x01010100</code></dd>
+            <dt>Description</dt>
+            <dd>
+                Stops the flow of execution until some time has passed.<br>
+                For instance, if there are two cameras (one before, and one after the function), the 2nd camera will not play until the time expires.
+            </dd>
+            <dt>Location</dt>
+            <dd>Any scene whose ID is greater than or equal to 10000.</dd>
+            <dt>Parameters</dt>
+            <dd>A time interval (<span class="float">float</span>).</dd>
+        </dl>
+        <h2 id="FUNC-2" class="r">Function 2</h2> <span class="toggleSrcText" onclick="toggleImg(1)">[view source code]</span> 
+        <img class="toggleSrc" src="img\func-0002.png">
+        <dl>
+            <dt>Hex Interpretation</dt>
+            <dd><code class="r">0x01010200</code></dd>
+            <dt>Description</dt>
+            <dd>Marks the ID of the scenario, used to identify what audio, lip-syncing and subtitle files will be used.</dd>
+            <dt>Location</dt>
+            <dd>The beginning of Scene -3.</dd>
+            <dt>Parameters</dt>
+            <dd>An integer that ranges from 0 to 47.</dd>
+        </dl>
+        <h2 id="FUNC-3" class="r">Function 3</h2> <span class="toggleSrcText" onclick="toggleImg(2)">[view source code]</span> 
+        <img class="toggleSrc" src="img\func-0003.png">
+        <dl>
+            <dt>Hex Interpretation</dt>
+            <dd><code class="r">0x01000300</code></dd>
+            <dt>Description</dt>
+            <dd>Marks the start of a scene. Nothing else.</dd>
+            <dt>Location</dt>
+            <dd>The beginning of any scene whose ID is greater than or equal to 10000.</dd>
+            <dt>Parameters</dt>
+            <dd>None.</dd>
+        </dl>
+        <h2 id="FUNC-4" class="r">Function 4</h2> <span class="toggleSrcText" onclick="toggleImg(3)">[view source code]</span> 
+        <img class="toggleSrc" src="img\func-0004.png">
+        <dl>
+            <dt>Hex Interpretation</dt>
+            <dd><code class="r">0x01000400</code></dd>
+            <dt>Description</dt>
+            <dd>
+                Marks the end of a scene, and the start of a battle.<br>
+                It resets the battle camera, and allows the characters to move around.
+            </dd>
+            <dt>Location</dt>
+            <dd>The end of any scene whose ID is greater than or equal to 10000.</dd>
+            <dt>Parameters</dt>
+            <dd>None.</dd>
+        </dl>
+        <h2 id="FUNC-5" class="r">Function 5</h2> <span class="toggleSrcText" onclick="toggleImg(4)">[view source code]</span> 
+        <img class="toggleSrc" src="img\func-0005.png">
+        <dl>
+            <dt>Hex Interpretation</dt>
+            <dd><code class="r">0x01000500</code></dd>
+            <dt>Description</dt>
+            <dd>Marks the character positions on the map.</dd>
+            <dt>Location</dt>
+            <dd>Any scene whose ID is greater than or equal to 10000; next to <a href="#FUNC-3">Function 3</a>.</dd>
+            <dt>Parameters</dt>
+            <dd>None.</dd>
+        </dl>
+        <h2 id="FUNC-6" class="r">Function 6</h2> <span class="toggleSrcText" onclick="toggleImg(5)">[view source code]</span> 
+        <img class="toggleSrc" src="img\func-0006.png">
+        <dl>
+            <dt>Hex Interpretation</dt>
+            <dd><code class="r">0x01000600</code></dd>
+            <dt>Description</dt>
+            <dd>Marks the disabling of all VFX (aura charges, ki-charging auras and camera shakes).</dd>
+            <dt>Location</dt>
+            <dd>Any scene whose ID is greater than or equal to 10000; next to <a href="#FUNC-5">Function 5</a>.</dd>
+            <dt>Parameters</dt>
+            <dd>None.</dd>
+        </dl>
+        <h2 id="FUNC-7" class="r">Function 7</h2> <span class="toggleSrcText" onclick="toggleImg(6)">[view source code]</span> 
+        <img class="toggleSrc" src="img\func-0007.png">
+        <dl>
+            <dt>Hex Interpretation</dt>
+            <dd><code class="r">0x01000700</code></dd>
+            <dt>Description</dt>
+            <dd>Marks the storage of conditional properties, audio-related and scene-related.</dd>
+            <dt>Location</dt>
+            <dd>Any scene whose ID is greater than or equal to 10000; next to <a href="#FUNC-6">Function 6</a>.</dd>
+            <dt>Parameters</dt>
+            <dd>None.</dd>
+        </dl>
+        <h3 class="g">Properties</h3>
+        <dl>
+            <dt><span class="ch">a</span> type (<code class="g">0x08610200</code>)</dt>
+            <dd>
+                A predetermined scene link that takes two parameters:
+                <li>Condition ID (<span class="int">int</span>)</li>
+                <li>Scene ID (<span class="int">int</span>)</li>
+            </dd>
+            <dt><span class="ch">v</span> type (<code class="g">0x08760200</code>)</dt>
+            <dd>
+                A predetermined audio link that takes two parameters:
+                <li>Condition ID (<span class="int">int</span>)</li>
+                <li>Voice Line ID (<span class="int">int</span>)</li>
+            </dd>
+        </dl>
+        <h2 id="FUNC-8" class="r">Function 8</h2> <span class="toggleSrcText" onclick="toggleImg(7)">[view source code]</span> 
+        <img class="toggleSrc" src="img\func-0008.png">
+        <dl>
+            <dt>Hex Interpretation</dt>
+            <dd><code class="r">0x01020800</code></dd>
+            <dt>Description</dt>
+            <dd>Manages post-cutscene events, one for each scene.</dd>
+            <dt>Location</dt>
+            <dd>Any scene whose ID is greater than or equal to 10000; next to <a href="#FUNC-14">Function 14</a>.</dd>
+            <dt>Parameters</dt>
+            <dd>Event ID (<span class="int">int</span>)</dd>
+            <dd>Character ID (<span class="int">int</span>)</dd>
+        </dl>
+        <h2 id="FUNC-9" class="r">Function 9</h2> <span class="toggleSrcText" onclick="toggleImg(8)">[view source code]</span> 
+        <img class="toggleSrc" src="img\func-0009.png">
+        <dl>
+            <dt>Hex Interpretation</dt>
+            <dd><code class="r">0x01010900</code></dd>
+            <dt>Description</dt>
+            <dd>Indicates the end of the battle.</dd>
+            <dt>Location</dt>
+            <dd>The end of any scene whose ID is greater than or equal to 10000; next to <a href="#FUNC-3">Function 3</a>.</dd>
+            <dt>Parameters</dt>
+            <dd>
+                Battle Outcome ID (<span class="int">int</span>), which can take these values:
+                <li><code>00</code> = You Win! (K.O.)</li>
+                <li><code>01</code> = You Lose! (K.O.)</li>
+                <li><code>02</code> = You Win! (Ringout)</li>
+                <li><code>03</code> = You Lose! (Ringout)</li>
+            </dd>
+        </dl>
+        <h2 id="FUNC-10" class="r">Function 10</h2> <span class="toggleSrcText" onclick="toggleImg(9)">[view source code]</span> 
+        <img class="toggleSrc" src="img\func-0010.png">
+        <dl>
+            <dt>Hex Interpretation</dt>
+            <dd><code class="r">0x01050A00</code></dd>
+            <dt>Description</dt>
+            <dd>Initializes the Battle Settings.</dd>
+            <dt>Location</dt>
+            <dd>The beginning of Scene -4.</dd>
+            <dt>Parameters</dt>
+            <dd>Map ID (<span class="int">int</span>), that ranges from 0 to 34</dd>
+            <dd>Initial BGM Track ID (<span class="int">int</span>)</dd>
+            <dd>
+                Battle Time ID (<span class="int">int</span>), which can take the following values:
+                <li><code>00</code> = Infinite (default value)</li>
+                <li><code>01</code> = 60 s</li>
+                <li><code>02</code> = 90 s</li>
+                <li><code>03</code> = 180 s</li>
+                <li><code>04</code> = 240 s</li>
+            </dd>
+            <dd>Announcer ID (<span class="int">int</span>), which can take the following values:
+                <li><code>00</code> = Ox King</li>
+                <li><code>01</code> = Videl</li>
+                <li><code>02</code> = Supreme Kai</li>
+                <li><code>03</code> = Shenron (default value)</li>
+                <li><code>04</code> = Announcer 1</li>
+                <li><code>05</code> = Announcer 2</li>
+                <li><code>06</code> = Announcer 3</li>
+                <li><code>07</code> = Videl (used for Battle Training only)</li>
+            </dd>
+            <dd>
+                Enable/Disable Map Destruction (<span class="int">int</span>), that acts like a boolean - <code>00</code> means disabled, <code>01</code> means enabled
+            </dd>
+            <br>The other Battle Time values are unused, because the battle still goes on, even if the timer ends.
+        </dl>
+        <h2 id="FUNC-11" class="r">Function 11</h2> <span class="toggleSrcText" onclick="toggleImg(10)">[view source code]</span> 
+        <img class="toggleSrc" src="img\func-0011.png">
+        <dl>
+            <dt>Hex Interpretation</dt>
+            <dd><code class="r">0x01020B00</code></dd>
+            <dt>Description</dt>
+            <dd>Initializes the Team Settings.</dd>
+            <dt>Location</dt>
+            <dd>Scene -4; repeated twice; next to <a href="#FUNC-10">Function 10</a>.</dd>
+            <dt>Parameters</dt>
+            <dd>Team ID (<span class="int">int</span>), that acts like a boolean - <code>00</code> refers to Player 1's Team, <code>01</code> refers to the Opponent's Team</dd>
+            <dd>Number of Teammates (<span class="int">int</span>), that ranges from 1 to 5</dd>
+        </dl>
+        <h2 id="FUNC-12" class="r">Function 12</h2> <span class="toggleSrcText" onclick="toggleImg(11)">[view source code]</span> 
+        <img class="toggleSrc" src="img\func-0012.png">
+        <dl>
+            <dt>Hex Interpretation</dt>
+            <dd><code class="r">0x010E0C00</code></dd>
+            <dt>Description</dt>
+            <dd>Initializes the Character Settings.</dd>
+            <dt>Location</dt>
+            <dd>Scene -4; next to <a href="#FUNC-11">Function 11</a>.</dd>
+            <dt>Parameters</dt>
+            <dd>Character Index (<span class="int">int</span>), that ranges from 0 to 4</dd>
+            <dd>Character ID (<span class="int">int</span>), that ranges from 0 to 160</dd>
+            <dd>Costume ID (<span class="int">int</span>), that ranges from 0 to 3</dd>
+            <dd>Enable/Disable Damaged Costume (<span class="int">int</span>), that acts like a boolean - <code>00</code> means disabled, <code>01</code> means enabled</dd>
+            <dd>Z-Item ID #8 (<span class="int">int</span>) (represents a Strategy Type Z-Item</dd>
+            <dd>Initial Health Percentage (<span class="int">int</span>), that ranges from 1 to 100</dd>
+            <dd>Z-Item ID #1 (<span class="int">int</span>)</dd>
+            <dd>Z-Item ID #2 (<span class="int">int</span>)</dd>
+            <dd>Z-Item ID #3 (<span class="int">int</span>)</dd>
+            <dd>Z-Item ID #4 (<span class="int">int</span>)</dd>
+            <dd>Z-Item ID #5 (<span class="int">int</span>)</dd>
+            <dd>Z-Item ID #6 (<span class="int">int</span>)</dd>
+            <dd>Z-Item ID #7 (<span class="int">int</span>)</dd>
+        </dl>
+        <h2 id="FUNC-13" class="r">Function 13</h2>
+        <dl>
+            <dt>Hex Interpretation</dt>
+            <dd><code class="r">0x01000D00</code></dd>
+            <dt>Description</dt>
+            <dd>Marks the storage of properties that change Player 1's Character Settings mid-battle.</dd>
+            <dt>Location</dt>
+            <dd>Any scene whose ID is greater than or equal to 10000; next to <a href="#FUNC-7">Function 7</a>.</dd>
+            <dt>Parameters</dt>
+            <dd>None.</dd>
+        </dl>
+        <h3 class="g">Properties</h3>
+        <dl>
+            <dt><span class="ch">C</span> type (<code class="g">0x08430100</code>)</dt>
+            <dd>
+                Assigns all previously given properties to a character.<br>It takes one parameter:
+                <li>Character Index (<span class="int">int</span>), that ranges from 0 to 4)</li>
+                If not specified, the properties will be applied to the currently chosen character.
+            </dd>
+            <dt><span class="ch">h</span> type (<code class="g">0x08680100</code>)</dt>
+            <dd>
+                Assigns a percentage of health to the currently chosen character.<br>It takes one parameter:
+                <li>Health Percentage (<span class="int">int</span>), that ranges from 0 to 100)</li>
+            </dd>
+            <dt><span class="ch">I</span> type (<code class="g">0x08490100</code>)</dt>
+            <dd>
+                Assigns a percentage of ki to the currently chosen character.<br>It takes one parameter:
+                <li>Ki Percentage (<span class="int">int</span>), that ranges from 0 to 100)</li>
+            </dd>
+            <dt><span class="ch">F</span> type (<code class="g">0x08460100</code>)</dt>
+            <dd>
+                Adds a percentage of ki to the currently chosen character.<br>It takes one parameter:
+                <li>Ki Percentage (<span class="int">int</span>), that ranges from 0 to 100)</li>
+            </dd>
+            <dt><span class="ch">b</span> type (<code class="g">0x08620100</code>)</dt>
+            <dd>
+                Assigns a given number of Blast Stocks to the currently chosen character.<br>It takes one parameter:
+                <li>Number of Blast Stocks (<span class="int">int</span>)</li>
+            </dd>
+            <dt><span class="ch">B</span> type (<code class="g">0x08620100</code>)</dt>
+            <dd>
+                Is supposed to add a given number of Blast Stocks to the currently chosen character.<br>
+                However, it acts the same as the <span class="ch">F</span> type property because someone at Spike messed up.<br>It takes one parameter:
+                <li>Number of Blast Stocks (<span class="int">int</span>)</li>
+            </dd>
+            <dt><span class="ch">0</span> type (<code class="g">0x08300100</code>) - <span class="ch">6</span> type (<code class="g">0x08360100</code>)</dt>
+            <dd>
+                Assigns a Z-Item to the slot with the same number as the property type itself.<br>It takes one parameter:
+                <li>Z-Item ID (<span class="int">int</span>)</li>
+            </dd>
+            These properties also apply to <a href="#FUNC-14">Function 14</a>.
+        </dl>
+        <h2 id="FUNC-14" class="r">Function 14</h2>
+        <dl>
+            <dt>Hex Interpretation</dt>
+            <dd><code class="r">0x01000E00</code></dd>
+            <dt>Description</dt>
+            <dd>Marks the storage of properties that change the Opponent's Character Settings mid-battle.</dd>
+            <dt>Location</dt>
+            <dd>Any scene whose ID is greater than or equal to 10000; next to <a href="#FUNC-13">Function 13</a>.</dd>
+            <dt>Parameters</dt>
+            <dd>None.</dd>
+        </dl>
+        <h3 class="g">Properties</h3>
+        <dl>
+            <dt><span class="ch">l</span> type (<code class="g">0x086C0100</code>)</dt>
+            <dd>
+                Changes the COM Difficulty Level to the given value.<br>It takes one parameter:
+                <li>COM Difficulty Level (<span class="int">int</span>)</li>
+            </dd>
+            <dt><span class="ch">a</span> type (<code class="g">0x08610100</code>)</dt>
+            <dd>
+                Is supposed to overwrite the 8th Z-Item of the currently chosen character.<br>
+                However, it ends up affecting the next teammate's 1st Z-Item instead.<br>It takes one parameter:
+                <li>Z-Item ID (<span class="int">int</span>)</li>
+            </dd>
+        </dl>
+        <h2 id="FUNC-15" class="r">Function 15</h2>
+        <dl>
+            <dt>Hex Interpretation</dt>
+            <dd><code class="r">0x01000E00</code></dd>
+            <dt>Description</dt>
+            <dd>Marks the storage of audio-related properties.</dd>
+            <dt>Location</dt>
+            <dd>The beginning of Scene -5.</dd>
+            <dt>Parameters</dt>
+            <dd>None.</dd>
+        </dl>
+        <h3 class="g">Properties</h3>
+        <dl>
+            <dt><span class="ch">v</span> type (<code class="g">0x08760200</code>)</dt>
+            <dd>
+                Indicates what audio file is being used, and which character is speaking.<br>
+                It takes two parameters:
+                <li>Voice Line ID (<span class="int">int</span>)</li>
+                <li>Character Index (<span class="int">int</span>)</li>
+                This property also helps to make the subtitles gray if said character is not present in the scene.
+            </dd>
+        </dl>
+        <h2 id="FUNC-16" class="r">Function 16</h2> <span class="toggleSrcText" onclick="toggleImg(12)">[view source code]</span> 
+        <img class="toggleSrc" src="img\func-0016.png">
+        <dl>
+            <dt>Hex Interpretation</dt>
+            <dd><code class="r">0x010F1000</code></dd>
+            <dt>Description</dt>
+            <dd>Assigns the rewards given upon scenario completion.</dd>
+            <dt>Location</dt>
+            <dd>Scene -3; next to <a href="#FUNC-2">Function 2</a>.</dd>
+            <dt>Parameters</dt>
+            <dd>Number of Z-Points for Easy Mode (<span class="int">int</span>)</dd>
+            <dd>Number of Z-Points for Normal Mode (<span class="int">int</span>)</dd>
+            <dd>Number of Z-Points for Hard Mode (<span class="int">int</span>)</dd>
+            <dd>Unlockable Z-Item ID #1 (<span class="int">int</span>)</dd>
+            <dd>Unlockable Z-Item ID #2 (<span class="int">int</span>)</dd>
+            <dd>Unlockable Z-Item ID #3 (<span class="int">int</span>)</dd>
+            <dd>Unlockable Map ID #1 (<span class="int">int</span>)</dd>
+            <dd>Unlockable Map ID #2 (<span class="int">int</span>)</dd>
+            <dd>Unlockable Map ID #3 (<span class="int">int</span>)</dd>
+            <dd>Unlockable Character ID #1 (<span class="int">int</span>)</dd>
+            <dd>Unlockable Character ID #2 (<span class="int">int</span>)</dd>
+            <dd>Unlockable Character ID #3 (<span class="int">int</span>)</dd>
+            <dd>Unlockable Scenario ID #1 (<span class="int">int</span>)</dd>
+            <dd>Unlockable Scenario ID #2 (<span class="int">int</span>)</dd>
+            <dd>Unlockable Scenario ID #3 (<span class="int">int</span>)</dd>
+        </dl>
+        <h2 id="FUNC-701" class="b">Function 701</h2> <span class="toggleSrcText" onclick="toggleImg(13)">[view source code]</span> 
+        <img class="toggleSrc" src="img\func-0701.png">
+        <dl>
+            <dt>Hex Interpretation</dt>
+            <dd><code class="b">0x0100BD02</code></dd>
+            <dt>Description</dt>
+            <dd>Loads the correct text PAK file, based on the scenario ID.</dd>
+            <dt>Location</dt>
+            <dd>Scene -2</dd>
+            <dt>Parameters</dt>
+            <dd>None.</dd>
+        </dl>
+        <h2 id="FUNC-702" class="b">Function 702</h2> <span class="toggleSrcText" onclick="toggleImg(14)">[view source code]</span> 
+        <img class="toggleSrc" src="img\func-0702.png">
+        <dl>
+            <dt>Hex Interpretation</dt>
+            <dd><code class="b">0x0100BE02</code></dd>
+            <dt>Description</dt>
+            <dd>Loads the correct lip-syncing PAK file, based on the scenario ID.</dd>
+            <dt>Location</dt>
+            <dd>Scene -2; next to <a href="#FUNC-701">Function 701</a>.</dd>
+            <dt>Parameters</dt>
+            <dd>None.</dd>
+        </dl>
+        <h2 id="FUNC-801" class="b">Function 801</h2> <span class="toggleSrcText" onclick="toggleImg(15)">[view source code]</span> 
+        <img class="toggleSrc" src="img\func-0801.png">
+        <dl>
+            <dt>Hex Interpretation</dt>
+            <dd><code class="b">0x01072103</code></dd>
+            <dt>Description</dt>
+            <dd>Assigns the character's position and rotation.</dd>
+            <dt>Location</dt>
+            <dd>Any scene whose ID is greater than or equal to 10000; next to <a href="#FUNC-5">Function 5</a>.</dd>
+            <dt>Parameters</dt>
+            <dd>Character Index (<span class="int">int</span>)</dd>
+            <dd>X Position (<span class="float">float</span>)</dd>
+            <dd>Y Position (<span class="float">float</span>)</dd>
+            <dd>Z Position (<span class="float">float</span>)</dd>
+            <dd>X Rotation (<span class="float">float</span>)</dd>
+            <dd>Y Rotation (<span class="float">float</span>)</dd>
+            <dd>Z Rotation (<span class="float">float</span>)</dd>
+            If not present, the game will refer to the map's original positions.
+        </dl>
+        <h2 id="FUNC-802" class="b">Function 802</h2> <span class="toggleSrcText" onclick="toggleImg(16)">[view source code]</span> 
+        <img class="toggleSrc" src="img\func-0802.png">
+        <dl>
+            <dt>Hex Interpretation</dt>
+            <dd><code class="b">0x01042203</code></dd>
+            <dt>Description</dt>
+            <dd>Only assigns the character's position.</dd>
+            <dt>Location</dt>
+            <dd>Any scene whose ID is greater than or equal to 10000; next to <a href="#FUNC-5">Function 5</a>.</dd>
+            <dt>Parameters</dt>
+            <dd>Character Index (<span class="int">int</span>)</dd>
+            <dd>X Position (<span class="float">float</span>)</dd>
+            <dd>Y Position (<span class="float">float</span>)</dd>
+            <dd>Z Position (<span class="float">float</span>)</dd>
+        </dl>
+        <h2 id="FUNC-803" class="b">Function 803</h2> <span class="toggleSrcText" onclick="toggleImg(17)">[view source code]</span> 
+        <img class="toggleSrc" src="img\func-0803.png">
+        <dl>
+            <dt>Hex Interpretation</dt>
+            <dd><code class="b">0x01042303</code></dd>
+            <dt>Description</dt>
+            <dd>Only assigns the character's rotation.</dd>
+            <dt>Location</dt>
+            <dd>Any scene whose ID is greater than or equal to 10000; next to <a href="#FUNC-5">Function 5</a>.</dd>
+            <dt>Parameters</dt>
+            <dd>Character Index (<span class="int">int</span>)</dd>
+            <dd>X Rotation (<span class="float">float</span>)</dd>
+            <dd>Y Rotation (<span class="float">float</span>)</dd>
+            <dd>Z Rotation (<span class="float">float</span>)</dd>
+        </dl>
+        <h2 id="FUNC-804" class="b">Function 804</h2> <span class="toggleSrcText" onclick="toggleImg(18)">[view source code]</span> 
+        <img class="toggleSrc" src="img\func-0804.png">
+        <dl>
+            <dt>Hex Interpretation</dt>
+            <dd><code class="b">0x01012403</code></dd>
+            <dt>Description</dt>
+            <dd>Makes the character visible, in case they were invisible beforehand.</dd>
+            <dt>Location</dt>
+            <dd>Any scene whose ID is greater than or equal to 10000.</dd>
+            <dt>Parameters</dt>
+            <dd>Character Index (<span class="int">int</span>)</dd>
+        </dl>
+        <h2 id="FUNC-805" class="b">Function 805</h2> <span class="toggleSrcText" onclick="toggleImg(19)">[view source code]</span> 
+        <img class="toggleSrc" src="img\func-0805.png">
+        <dl>
+            <dt>Hex Interpretation</dt>
+            <dd><code class="b">0x01012503</code></dd>
+            <dt>Description</dt>
+            <dd>Makes the character invisible, in case they were visible beforehand.</dd>
+            <dt>Location</dt>
+            <dd>Any scene whose ID is greater than or equal to 10000.</dd>
+            <dt>Parameters</dt>
+            <dd>Character Index (<span class="int">int</span>)</dd>
+        </dl>
+        <h2 id="FUNC-806" class="b">Function 806</h2> <span class="toggleSrcText" onclick="toggleImg(20)">[view source code]</span> 
+        <img class="toggleSrc" src="img\func-0806.png">
+        <dl>
+            <dt>Hex Interpretation</dt>
+            <dd><code class="b">0x01012603</code></dd>
+            <dt>Description</dt>
+            <dd>Activates the Ki-charging Aura VFX.</dd>
+            <dt>Location</dt>
+            <dd>Any scene whose ID is greater than or equal to 10000.</dd>
+            <dt>Parameters</dt>
+            <dd>Character Index (<span class="int">int</span>)</dd>
+        </dl>
+        <h2 id="FUNC-807" class="b">Function 807</h2> <span class="toggleSrcText" onclick="toggleImg(21)">[view source code]</span> 
+        <img class="toggleSrc" src="img\func-0807.png">
+        <dl>
+            <dt>Hex Interpretation</dt>
+            <dd><code class="b">0x01012703</code></dd>
+            <dt>Description</dt>
+            <dd>Deactivates the Ki-charging Aura VFX.</dd>
+            <dt>Location</dt>
+            <dd>Any scene whose ID is greater than or equal to 10000.</dd>
+            <dt>Parameters</dt>
+            <dd>Character Index (<span class="int">int</span>)</dd>
+        </dl>
+        <h2 id="FUNC-808" class="b">Function 808</h2>
+        <dl>
+            <dt>Hex Interpretation</dt>
+            <dd><code class="b">0x01012803</code></dd>
+            <dt>Description</dt>
+            <dd>Activates the Aura Charge (lingering aura) VFX.</dd>
+            <dt>Location</dt>
+            <dd>Any scene whose ID is greater than or equal to 10000.</dd>
+            <dt>Parameters</dt>
+            <dd>Character Index (<span class="int">int</span>)</dd>
+        </dl>
+        <h2 id="FUNC-809" class="b">Function 809</h2>
+        <dl>
+            <dt>Hex Interpretation</dt>
+            <dd><code class="b">0x01012903</code></dd>
+            <dt>Description</dt>
+            <dd>Deactivates the Aura Charge (lingering aura) VFX.</dd>
+            <dt>Location</dt>
+            <dd>Any scene whose ID is greater than or equal to 10000.</dd>
+            <dt>Parameters</dt>
+            <dd>Character Index (<span class="int">int</span>)</dd>
+        </dl>
+        <h2 id="FUNC-810" class="b">Function 810</h2>
+        <dl>
+            <dt>Hex Interpretation</dt>
+            <dd><code class="b">0x01012A03</code></dd>
+            <dt>Description</dt>
+            <dd>Activates the MAX POWER Mode Explosion VFX.</dd>
+            <dt>Location</dt>
+            <dd>Any scene whose ID is greater than or equal to 10000.</dd>
+            <dt>Parameters</dt>
+            <dd>Character Index (<span class="int">int</span>)</dd>
+        </dl>
+        <h2 id="FUNC-901" class="b">Function 901</h2> <span class="toggleSrcText" onclick="toggleImg(22)">[view source code]</span> 
+        <img class="toggleSrc" src="img\func-0901.png">
+        <dl>
+            <dt>Hex Interpretation</dt>
+            <dd><code class="b">0x01028503</code></dd>
+            <dt>Description</dt>
+            <dd>Assigns an animation to a character in the scene.</dd>
+            <dt>Location</dt>
+            <dd>Any scene whose ID is greater than or equal to 10000.</dd>
+            <dt>Parameters</dt>
+            <dd>Character Index (<span class="int">int</span>)</dd>
+            <dd>Animation ID (<span class="int">int</span>)</dd>
+        </dl>
+        <h3 class="g">Properties</h3>
+        <dl>
+            <dt><span class="ch">t</span> type (<code class="g">0x08740100</code>)</dt>
+            <dd>
+                Speeds up or slows down an animation based on a coefficient.<br>It takes one parameter:
+                <li>Animation Speed Coefficient (an float)</li>
+            </dd>
+            <dt><span class="ch">l</span> type (<code class="g">0x086C0000</code>)</dt>
+            <dd>Makes an animation repeatable (<code>l</code> is short for <code>loop</code>).<br>It takes no parameters.</dd>
+            <dt><span class="ch">w</span> type (<code class="g">0x08770000</code>)</dt>
+            <dd>
+                Makes the animation freeze after its completion, because it is waiting for another animation.<br>It takes no parameters.<br>
+                NOTE: <code>w</code> is short for <code>wait</code>.
+            </dd>
+        </dl>
+        <h2 id="FUNC-902" class="b">Function 902</h2>
+        <dl>
+            <dt>Hex Interpretation</dt>
+            <dd><code class="b">0x01008603</code></dd>
+            <dt>Description</dt>
+            <dd>Enables character movement. This is unnecessary (thus unused), because <a href="#FUNC-4">Function 4</a> already does that.</dd>
+            <dt>Location</dt>
+            <dd>Any scene whose ID is greater than or equal to 10000.</dd>
+            <dt>Parameters</dt>
+            <dd>None.</dd>
+        </dl>
+        <h2 id="FUNC-1001" class="r">Function 1001</h2> <span class="toggleSrcText" onclick="toggleImg(23)">[view source code]</span> 
+        <img class="toggleSrc" src="img\func-1001.png">
+        <dl>
+            <dt>Hex Interpretation</dt>
+            <dd><code class="r">0x0101E903</code></dd>
+            <dt>Description</dt>
+            <dd>Creates a fade-out, usually at the beginning of a scene.</dd>
+            <dt>Location</dt>
+            <dd>Any scene whose ID is greater than or equal to 10000.</dd>
+            <dt>Parameters</dt>
+            <dd>Time Interval (<span class="float">float</span>)</dd>
+        </dl>
+        <h3 class="g">Properties</h3>
+        <dl>
+            <dt><span class="ch">W</span> type (<code class="g">0x08570000</code>)</dt>
+            <dd>Changes the fade-out color to white (<code>l</code> is short for <code>White</code>).<br>It takes no parameters.</dd>
+            <dt><span class="ch">w</span> type (<code class="g">0x08770000</code>)</dt>
+            <dd>
+                Gives the fade-out a higher priority, thus stopping the flow of execution until the fadeout is finished.<br>It takes no parameters.<br>
+                NOTE: These properties also apply to <a href="#FUNC-1002">Function 1002</a>.
+            </dd>
+        </dl>
+        <h2 id="FUNC-1002" class="r">Function 1002</h2>
+        <dl>
+            <dt>Hex Interpretation</dt>
+            <dd><code class="r">0x0101EA03</code></dd>
+            <dt>Description</dt>
+            <dd>Creates a fade-in, usually at the end of a scene.</dd>
+            <dt>Location</dt>
+            <dd>Any scene whose ID is greater than or equal to 10000.</dd>
+            <dt>Parameters</dt>
+            <dd>Time Interval (<span class="float">float</span>)</dd>
+        </dl>
+        <h2 id="FUNC-1003" class="r">Function 1003</h2> <span class="toggleSrcText" onclick="toggleImg(24)">[view source code]</span> 
+        <img class="toggleSrc" src="img\func-1003.png">
+        <dl>
+            <dt>Hex Interpretation</dt>
+            <dd><code class="r">0x0100EB03</code></dd>
+            <dt>Description</dt>
+            <dd>Disables the current fade.</dd>
+            <dt>Location</dt>
+            <dd>Any scene whose ID is greater than or equal to 10000.</dd>
+            <dt>Parameters</dt>
+            <dd>None.</dd>
+        </dl>
+        <h2 id="FUNC-1201" class="r">Function 1201</h2> <span class="toggleSrcText" onclick="toggleImg(25)">[view source code]</span> 
+        <img class="toggleSrc" src="img\func-1201.png">
+        <dl>
+            <dt>Hex Interpretation</dt>
+            <dd><code class="r">0x0106B104</code></dd>
+            <dt>Description</dt>
+            <dd>
+                Marks the starting point of a camera.<br>
+                If there are no other points, the camera becomes static.
+            </dd>
+            <dt>Location</dt>
+            <dd>Any scene whose ID is greater than or equal to 10000.</dd>
+            <dt>Parameters</dt>
+            <dd>
+                <li>X Position (<span class="float">float</span>)</li>
+                <li>Y Position (<span class="float">float</span>)</li>
+                <li>Z Position (<span class="float">float</span>)</li>
+                <li>Y Rotation (<span class="float">float</span>)</li>
+                <li>X Rotation (<span class="float">float</span>)</li>
+                <li>Z Rotation (<span class="float">float</span>)</li>
+            </dd>
+        </dl>
+        <h2 id="FUNC-1202" class="r">Function 1202</h2>
+        <dl>
+            <dt>Hex Interpretation</dt>
+            <dd><code class="r">0x0100B204</code></dd>
+            <dt>Description</dt>
+            <dd>Marks the 2nd point of a camera.</dd>
+            <dt>Location</dt>
+            <dd>Any scene whose ID is greater than or equal to 10000; next to <a href="#FUNC-1201">Function 1201</a>.</dd>
+            <dt>Parameters</dt>
+            <dd>None.</dd>
+        </dl>
+        <h3 class="g">Properties</h3>
+        <dl>
+            <dt><span class="ch">l</span> type (<code class="g">0x086C0700</code>)</dt>
+            <dd>
+                Represents another camera point (not just the 2nd, but also the 3rd).<br>It takes 7 parameters:
+                <li>Transition Speed, from starting point to current camera point (<span class="float">float</span>)</li>
+                <li>X Position (<span class="float">float</span>)</li>
+                <li>Y Position (<span class="float">float</span>)</li>
+                <li>Z Position (<span class="float">float</span>)</li>
+                <li>Y Rotation (<span class="float">float</span>)</li>
+                <li>X Rotation (<span class="float">float</span>)</li>
+                <li>Z Rotation (<span class="float">float</span>)</li>
+            </dd>
+            <dt><span class="ch">w</span> type (<code class="g">0x08770000</code>)</dt>
+            <dd>Gives the camera a higher priority, thus stopping the flow of execution until the camera is finished.<br>It takes no parameters.</dd>
+        </dl>
+        <h2 id="FUNC-1203" class="r">Function 1203</h2> <span class="toggleSrcText" onclick="toggleImg(26)">[view source code]</span> 
+        <img class="toggleSrc" src="img\func-1203.png">
+        <dl>
+            <dt>Hex Interpretation</dt>
+            <dd><code class="r">0x0100B304</code></dd>
+            <dt>Description</dt>
+            <dd>Resets the Battle Camera. This is unnecessary (thus unused), because <a href="#FUNC-4">Function 4</a> already does that.</dd>
+            <dt>Location</dt>
+            <dd>Any scene whose ID is greater than or equal to 10000.</dd>
+            <dt>Parameters</dt>
+            <dd>None.</dd>
+        </dl>
+        <h2 id="FUNC-1204" class="r">Function 1204</h2> <span class="toggleSrcText" onclick="toggleImg(27)">[view source code]</span> 
+        <img class="toggleSrc" src="img\func-1204.png">
+        <dl>
+            <dt>Hex Interpretation</dt>
+            <dd><code class="r">0x0101B404</code></dd>
+            <dt>Description</dt>
+            <dd>Shakes the current camera.</dd>
+            <dt>Location</dt>
+            <dd>Any scene whose ID is greater than or equal to 10000; next to <a href="#FUNC-1202">Function 1202</a>.</dd>
+            <dt>Parameters</dt>
+            <dd>Shake Force/Intensity (<span class="float">float</span>)</dd>
+        </dl>
+        <h3 class="g">Properties</h3>
+        <dl>
+            <dt><span class="ch">l</span> type (<code class="g">0x086C0000</code>)</dt>
+            <dd>Makes the shake go on repeatedly.<br>It takes no parameters.</dd>
+        </dl>
+        <h2 id="FUNC-1205" class="r">Function 1205</h2> <span class="toggleSrcText" onclick="toggleImg(28)">[view source code]</span> 
+        <img class="toggleSrc" src="img\func-1205.png">
+        <dl>
+            <dt>Hex Interpretation</dt>
+            <dd><code class="r">0x0100B504</code></dd>
+            <dt>Description</dt>
+            <dd>Disables the current camera shake.</dd>
+            <dt>Location</dt>
+            <dd>Any scene whose ID is greater than or equal to 10000; next to <a href="#FUNC-1203">Function 1203</a>.</dd>
+            <dt>Parameters</dt>
+            <dd>None.</dd>
+        </dl>
+        <h2 id="FUNC-1301" class="r">Function 1301</h2> <span class="toggleSrcText" onclick="toggleImg(29)">[view source code]</span> 
+        <img class="toggleSrc" src="img\func-1301.png">
+        <dl>
+            <dt>Hex Interpretation</dt>
+            <dd><code class="r">0x01011505</code></dd>
+            <dt>Description</dt>
+            <dd>Does nothing. Used for debugging purposes, to load a comment (string) in memory.</dd>
+            <dt>Location</dt>
+            <dd>Scene -1</dd>
+            <dt>Parameters</dt>
+            <dd>Any string</dd>
+        </dl>
+        <h2 id="FUNC-1302" class="r">Function 1302</h2>
+        <dl>
+            <dt>Hex Interpretation</dt>
+            <dd><code class="r">0x01001605</code></dd>
+            <dt>Description</dt>
+            <dd>Establishes subtitle settings.</dd>
+            <dt>Location</dt>
+            <dd>Scene -3</dd>
+            <dt>Parameters</dt>
+            <dd>None.</dd>
+        </dl>
+        <h3 class="g">Properties</h3>
+        <dl>
+            <dt><span class="ch">l</span> type (<code class="g">0x086C0100</code>)</dt>
+            <dd>
+                Changes the region of the subtitles.<br>
+                Its integer parameter can take one of these values:
+                <li><code>00</code> = Japan</li>
+                <li><code>01</code> = USA</li>
+                <li><code>02</code> = Europe</li>
+                <li><code>03</code> = Korea (Unused)</li>
+            </dd>
+            <dt><span class="ch">n</span> type (<code class="g">0x086E0100</code>)</dt>
+            <dd>
+                Indicates if the text is white or grey.<br>It takes one parameter:
+                <li>Text Indicator (<span class="int">int</span>), that acts like a boolean - <code>00</code> means white text, <code>01</code> means grey text)</li>
+            </dd>
+            <dt><span class="ch">d</span> type (<code class="g">0x08640200</code>)</dt>
+            <dd>
+                Indicates the text position.<br>It takes two parameters:
+                <li>X Position (<span class="int">int</span>)</li>
+                <li>Y Position (<span class="int">int</span>)</li>
+            </dd>
+            <dt><span class="ch">a</span> type (<code class="g">0x08610200</code>)</dt>
+            <dd>
+                Indicates the text size.<br>It takes two parameters:
+                <li>Size in terms of X (<span class="float">float</span>), aka the width</li>
+                <li>Size in terms of Y (<span class="float">float</span>), aka the height</li>
+            </dd>
+            <dt><span class="ch">s</span> type (<code class="g">0x08730100</code>)</dt>
+            <dd>
+                Resizes the text using the given coefficient, otherwise known as a scale.<br>It takes one parameter:
+                <li>Text Scale (<span class="float">float</span>)</li>
+            </dd>
+            <dt><span class="ch">c</span> type (<code class="g">0x08630400</code>)</dt>
+            <dd>
+                Assigns a color to the text.<br>It takes four parameters:
+                <li>Amount of <span class="r">Red</span> (<span class="int">int</span>)</li>
+                <li>Amount of <span class="g">Green</span> (<span class="int">int</span>)</li>
+                <li>Amount of <span class="b">Blue</span> (<span class="int">int</span>)</li>
+                <li>Opacity (<span class="int">int</span>)</li>
+            </dd>
+            <dt><span class="ch">p</span> type (<code class="g">0x08700200</code>)</dt>
+            <dd>
+                Refers to the padding, between both symbols and lines.<br>It takes two parameters:
+                <li>Padding between lines (<span class="int">int</span>)</li>
+                <li>Padding between symbols (<span class="int">int</span>)</li>
+            </dd>
+            <dt><span class="ch">w</span> type (<code class="g">0x08770100</code>)</dt>
+            <dd>
+                Refers to the text alignment.<br>
+                Its integer parameter can take one of these values:
+                <li><code>00</code> = Right-aligned</li>
+                <li><code>01</code> = Center-aligned (default value)</li>
+                <li><code>02</code> = Left-aligned</li>
+            </dd>
+            <dt><span class="ch">T</span> type (<code class="g">0x08540100</code>)</dt>
+            <dd>
+                Refers to the "type" of symbol, what the <code>T</code> stands for.<br>It takes one parameter:
+                <li>Symbol Type (<span class="int">int</span>)</li>
+                It is set to <code>02</code> by default, and it enables the outline around the text.
+            </dd>
+            <dt><span class="ch">O</span> type (<code class="g">0x084F0200</code>)</dt>
+            <dd>
+                Indicates the outline size.<br>It takes two parameters:
+                <li>Size in terms of X (<span class="float">float</span>), aka the width</li>
+                <li>Size in terms of Y (<span class="float">float</span>), aka the height</li>
+            </dd>
+            <dt><span class="ch">C</span> type (<code class="g">0x08430400</code>)</dt>
+            <dd>
+                Assigns a color to the outline.<br>It takes four parameters:
+                <li>Amount of <span class="r">Red</span> (<span class="int">int</span>)</li>
+                <li>Amount of <span class="g">Green</span> (<span class="int">int</span>)</li>
+                <li>Amount of <span class="b">Blue</span> (<span class="int">int</span>)</li>
+                <li>Opacity (<span class="int">int</span>)</li>
+            </dd>
+        </dl>
+        <h2 id="FUNC-1501" class="r">Function 1501</h2> <span class="toggleSrcText" onclick="toggleImg(30)">[view source code]</span> 
+        <img class="toggleSrc" src="img\func-1501.png">
+        <dl>
+            <dt>Hex Interpretation</dt>
+            <dd><code class="r">0x0101DD05</code></dd>
+            <dt>Description</dt>
+            <dd>Establishes a change in Background Music.</dd>
+            <dt>Location</dt>
+            <dd>Any scene whose ID is greater than or equal to 10000.</dd>
+            <dt>Parameters</dt>
+            <dd>BGM Track ID (<span class="int">int</span>)</dd>
+        </dl>
+        <h2 id="FUNC-1502" class="r">Function 1502</h2> <span class="toggleSrcText" onclick="toggleImg(31)">[view source code]</span> 
+        <img class="toggleSrc" src="img\func-1502.png">
+        <dl>
+            <dt>Hex Interpretation</dt>
+            <dd><code class="r">0x0100DE05</code></dd>
+            <dt>Description</dt>
+            <dd>Turns down the volume of the currently playing BGM.</dd>
+            <dt>Location</dt>
+            <dd>Any scene whose ID is greater than or equal to 10000.</dd>
+            <dt>Parameters</dt>
+            <dd>None.</dd>
+        </dl>
+        <h3 class="g">Properties</h3>
+        <dl>
+            <dt><span class="ch">w</span> type (<code class="g">0x08770000</code>)</dt>
+            <dd>Stops the flow of execution until the BGM ends.<br>It takes no parameters.</dd>
+        </dl>
+        <h2 id="FUNC-1601" class="r">Function 1601</h2> <span class="toggleSrcText" onclick="toggleImg(32)">[view source code]</span> 
+        <img class="toggleSrc" src="img\func-1601.png">
+        <dl>
+            <dt>Hex Interpretation</dt>
+            <dd><code class="r">0x01014106</code></dd>
+            <dt>Description</dt>
+            <dd>Plays a sound from <code>SE_Battle.pak</code>. As the name says, it contains most Battle Sound Effects.</dd>
+            <dt>Location</dt>
+            <dd>Any scene whose ID is greater than or equal to 10000.</dd>
+            <dt>Parameters</dt>
+            <dd>Audio ID (<span class="int">int</span>)</dd>
+        </dl>
+        <h2 id="FUNC-1602" class="r">Function 1602</h2> <span class="toggleSrcText" onclick="toggleImg(33)">[view source code]</span> 
+        <img class="toggleSrc" src="img\func-1602.png">
+        <dl>
+            <dt>Hex Interpretation</dt>
+            <dd><code class="r">0x01014206</code></dd>
+            <dt>Description</dt>
+            <dd>Plays an audio file out of 300 that each scenario has.</dd>
+            <dt>Location</dt>
+            <dd>Any scene whose ID is greater than or equal to 10000.</dd>
+            <dt>Parameters</dt>
+            <dd>Audio ID (<span class="int">int</span>)</dd>
+        </dl>
+        <h3 class="g">Properties</h3>
+        <dl>
+            <dt><span class="ch">h</span> type (<code class="g">0x08680100</code>)</dt>
+            <dd>
+                Allows 2 audio files to be played at the same time.<br>It takes one parameter:
+                <li>Audio Channel (<span class="int">int</span>)</li>
+            </dd>
+            <dt><span class="ch">w</span> type (<code class="g">0x08770000</code>)</dt>
+            <dd>Stops the flow of execution until the voice line ends.<br>It takes no parameters.</dd><br>
+            These properties also apply to 
+        </dl>
+        <h2 id="FUNC-1603" class="r">Function 1603</h2>
+        <dl>
+            <dt>Hex Interpretation</dt>
+            <dd><code class="r">0x01024306</code></dd>
+            <dt>Description</dt>
+            <dd>Works the same as <a href="#FUNC-1602">Function 1602</a>, except it is used for character audio.</dd>
+            <dt>Location</dt>
+            <dd>Any scene whose ID is greater than or equal to 10000.</dd>
+            <dt>Parameters</dt>
+            <dd>Character Index (<span class="int">int</span>)</dd>
+            <dd>Voice Line ID (<span class="int">int</span>)</dd>
+        </dl>
+        <h2 id="FUNC-1701" class="r">Function 1701</h2> <span class="toggleSrcText" onclick="toggleImg(34)">[view source code]</span> 
+        <img class="toggleSrc" src="img\func-1701.png">
+        <dl>
+            <dt>Hex Interpretation</dt>
+            <dd><code class="r">0x0101A506</code></dd>
+            <dt>Description</dt>
+            <dd>Stops the flow of execution until a certain button is pressed. In other words, a poor attempt at a cutscene skip.</dd>
+            <dt>Location</dt>
+            <dd>Any scene whose ID is greater than or equal to 10000.</dd>
+            <dt>Parameters</dt>
+            <dd>
+                Button ID (<span class="int">int</span>), which can take the following values:
+                <li><code>0x00, 0x15, 0x20</code> = Left</li>
+                <li><code>0x03, 0x18, 0x23</code> = Up</li>
+                <li><code>0x01, 0x16, 0x21</code> = Right</li>
+                <li><code>0x02, 0x17, 0x22</code> = Down</li>
+                <li><code>0x13, 0x33</code> = R3</li>
+                <li><code>0x0B, 0x2B</code> = Square</li>
+                <li><code>0x0A, 0x2A</code> = Triangle</li>
+                <li><code>0x09, 0x29</code> = Cross</li>
+                <li><code>0x08, 0x28</code> = Circle</li>
+                <li><code>0x0E, 0x2E</code> = L1</li>
+                <li><code>0x0F, 0x2F</code> = L2</li>
+                <li><code>0x12, 0x32</code> = L3</li>
+                <li><code>0x10, 0x30</code> = R1</li>
+                <li><code>0x11, 0x31</code> = R2</li>
+                <li><code>0x07, 0x27</code> = R-Stick Up</li>
+                <li><code>0x04, 0x24</code> = R-Stick Left</li>
+                <li><code>0x06, 0x26</code> = R-Stick Down</li>
+                <li><code>0x05, 0x25</code> = R-Stick Right</li>
+                <li><code>0x0D, 0x2D</code> = Select</li>
+            </dd>
+        </dl>
+        <hr><h1 id="RESOURCES">Useful Resources</h1>
+        <h2 id="BGM-TXT">BGM ID List</h2><br>
+        <embed src="txt\bgm.txt"><br>
+        Note that the last 4 songs are exclusive to the Japanese version of the game.<br>
+        <h2 id="CHARS-TXT">Character ID List</h2><br>
+        <embed src="txt\characters.txt"><br>
+        <h2 id="COND-TXT">Condition ID List</h2><br>
+        <embed src="txt\conditions.txt"><br>
+        To apply the condition to the opponent instead, replace the 2nd byte (<code>00</code>) of the condition ID with <code>0x80</code>.<br>
+        <h2 id="EVENT-TXT">Event ID List</h2><br>
+        <embed src="txt\events.txt"><br>
+        To apply the event to the opponent instead, replace the 2nd byte (<code>00</code>) of the event ID with <code>0x80</code>.<br>
+        <h2 id="MAP-TXT">Map ID List</h2><br>
+        <embed src="txt\maps.txt"><br>
+        <h2 id="ITEMS-TXT">Z-Item ID List</h2><br>
+        <embed src="txt\items.txt"><br>
+        <script src="res\index.js"></script>
+        <hr><h1 id="OUTRO">Conclusion</h1>
+        <p>
+            To end this on a high note, I shall provide a bit more insight.
+            <ul>
+                <li>It is always encouraged to paste the contents of the GSDT in its own file (without the header), before proceeding with anything else.</li>
+                <li>Most of the functions listed above are unused, and the ones that are used may not be included in every scenario.</li>
+                <details>
+                    That is why I recommend reading <a href="pdf\Add_Music_Change_in_Story_Mode_Tutorial.pdf" target="_blank">Metal's guide</a> on how to add BGM changes to a scenario.<br>
+                    Nearly the same logic can be followed for other functions - just be careful where you place them, and what values they will be using.
+                </details>
+                <li>To go from one cutscene to another, pressing the R3 button is required. However, this is not always the case.</li>
+                <details>
+                    If the preceding cutscene's event is one of the following, and the <i>opponent</i> is the one who does it, then said cutscene's activation will become automatic.
+                    <dt>Performing a Special Attack (Blast 1 or Blast 2)</dt>
+                    <dt>Performing a Normal Clash</dt>
+                    <dt>Transforming, detransforming and fusing (if possible)</dt>
+                    <dt>Switching with another teammate (if possible)</dt>
+                   Although, if the condition for that scene involves either player <b>falling into the ground/water (or dying)</b>, then the next cutscene will play automatically anyway.
+                </details>
+            </ul>
+            </p>
+            <h3>Additional References</h3>
+            <ol>
+                <li><a href="pdf\[TUTO]_Modificar_el_Modo_Historia.pdf" target="_blank">pxgamer13's tutorial on Super-Z</a>, which was originally translated from French to Spanish, and then saved as a PDF for archival purposes.</li>
+                <li><a href="pdf\Estructura_y_sistema_modo_historia.pdf" target="_blank">Vras's original Dragon History research</a>, obviously written in Spanish and far from finished.</li>
+                <li><a href="pdf\BT3_GSC_Breakdown.pdf" target="_blank">My English adapation of the research above</a>, made in Google Docs and converted into a PDF afterwards.</li>
+                <li>Metal's translation from Spanish to English of <a href="pdf\Full_Story_Mode_Breakdown_with_Code_by_Vras.pdf" target="_blank">Vras's latest Dragon History research.</a></li>
+                <li><a href="res\gsc-breakdown-offline.zip" target="_blank">Offline Backup</a> of this website.</li>
+            </ol>
+            Knowledge is power, and <del>Dragon</del> History is written by the victors. Happy Modding!
+    </body>
+</html>

@@ -1,0 +1,92 @@
+DEC   HEX     Condition
+00 -> 0000 -> Wait 10 seconds
+01 -> 0100 -> Wait 15 seconds
+02 -> 0200 -> Wait 20 seconds
+03 -> 0300 -> Wait 25 seconds
+04 -> 0400 -> Wait 30 seconds
+05 -> 0500 -> Wait 35 seconds
+06 -> 0600 -> Wait 40 seconds
+07 -> 0700 -> Wait 45 seconds
+08 -> 0800 -> Wait 50 seconds
+09 -> 0900 -> Wait 55 seconds
+10 -> 0A00 -> Wait 60 seconds
+11 -> 0B00 -> Wait 70 seconds
+12 -> 0C00 -> Wait 80 seconds
+13 -> 0D00 -> Wait 90 seconds
+14 -> 0E00 -> Wait 100 seconds
+15 -> 0F00 -> Wait 120 seconds
+16 -> 1000 -> Wait 140 seconds
+17 -> 1100 -> Wait 160 seconds
+18 -> 1200 -> Wait 180 seconds
+19 -> 1300 -> UNKNOWN
+20 -> 1400 -> Perform Normal Clash
+21 -> 1500 -> Perform Aerial Clash
+22 -> 1600 -> Lose 1 Health Bar
+23 -> 1700 -> Lose 2 Health Bars
+24 -> 1800 -> Lose 3 Health Bars
+25 -> 1900 -> Lose 4 Health Bars
+26 -> 1A00 -> Lose 5 Health Bars
+27 -> 1B00 -> Lose 6 Health Bars
+28 -> 1C00 -> Lose 7 Health Bars
+29 -> 1D00 -> Reach Full Ki Bars
+30 -> 1E00 -> Reach Max Amount of Blast Stocks
+31 -> 1F00 -> Go in MAX POWER Mode
+32 -> 2000 -> Transform/Detransform/Fuse
+33 -> 2100 -> Taunt
+34 -> 2200 -> Fall into ground/water
+35 -> 2300 -> UNKNOWN
+36 -> 2400 -> Perform 1st Blast 1
+37 -> 2500 -> Perform 2nd Blast 1
+38 -> 2600 -> Perform 1st Blast 2
+39 -> 2700 -> Perform 2nd Blast 2
+40 -> 2800 -> Perform Ultimate Blast
+41 -> 2900 -> Hit with 1st Blast 1
+42 -> 2A00 -> Hit with 2nd Blast 1
+43 -> 2B00 -> Hit with 1st Blast 2
+44 -> 2C00 -> Hit with 2nd Blast 2
+45 -> 2D00 -> Hit with Ultimate Blast
+46 -> 2E00 -> Block 1st Blast 2
+47 -> 2F00 -> Block 2nd Blast 2
+48 -> 3000 -> Block Ultimate Blast
+49 -> 3100 -> Perform Dragon Homing
+50 -> 3200 -> Perform Vanishing Attack
+51 -> 3300 -> Perform Throw
+52 -> 3400 -> Perform Hyper Smash
+53 -> 3500 -> UNKNOWN
+54 -> 3600 -> Hit with Charged Ki Blast
+55 -> 3700 -> Perform Fully Charged Left Smash Attack
+56 -> 3800 -> Perform Fully Charged Right Smash Attack
+57 -> 3900 -> Perform Fully Charged Up Smash Attack
+58 -> 3A00 -> Perform Fully Charged Down Smash Attack
+59 -> 3B00 -> Perform Fully Charged Neutral Smash Attack
+60 -> 3C00 -> Perform First Attack!
+61 -> 3D00 -> Perform Rush Attack
+62 -> 3E00 -> Perform Dragon Smash
+63 -> 3F00 -> Perform Burst Meteo Finisher
+64 -> 4000 -> Perform Dash Smash
+65 -> 4100 -> Perform Teleport
+66 -> 4200 -> Perform Z-Counter
+67 -> 4300 -> Perform Guard Crush
+68 -> 4400 -> Perform Sonic Sway
+69 -> 4500 -> Perform Emergency Blaster Wave
+70 -> 4600 -> Win Beam Struggle
+71 -> 4700 -> Win Normal Clash
+72 -> 4800 -> Win via K.O.
+73 -> 4900 -> Win via Ringout
+74 -> 4A00 -> UNKNOWN
+75 -> 4B00 -> Perform Misc. Melee Attack
+76 -> 4C00 -> UNKNOWN
+77 -> 4D00 -> UNKNOWN
+78 -> 4E00 -> UNKNOWN
+79 -> 4F00 -> UNKNOWN
+80 -> 5000 -> Press R3
+81 -> 5100 -> UNKNOWN
+82 -> 5200 -> Perform Blast 1 Finish
+83 -> 5300 -> Perform Blast 2 Finish
+84 -> 5400 -> Defeat all teammates
+85 -> 5500 -> Get Hit
+86 -> 5600 -> UNKNOWN
+87 -> 5700 -> UNKNOWN
+88 -> 5800 -> UNKNOWN
+89 -> 5900 -> UNKNOWN
+-1 -> FFFF -> Immediate

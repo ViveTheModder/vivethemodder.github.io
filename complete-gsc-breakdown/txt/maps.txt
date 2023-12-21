@@ -1,0 +1,36 @@
+DEC   HEX   Map Name
+00 -> 00 -> Wasteland - Noon
+01 -> 01 -> Rocky Area - Noon
+02 -> 02 -> Planet Namek
+03 -> 03 -> Dying Namek
+04 -> 04 -> World Tournament Stage  - Noon
+05 -> 05 -> Kami's Lookout
+06 -> 06 -> Cell Games Arena - Evening
+07 -> 07 -> Supreme Kai's World
+08 -> 08 -> Hyperbolic Time Chamber
+09 -> 09 -> City Ruins - Noon
+10 -> 0A -> Mountain Road - Noon
+11 -> 0B -> Islands
+12 -> 0C -> Kame House
+13 -> 0D -> Planet - Night
+14 -> 0E -> Glacier
+15 -> 0F -> Ruined Earth
+16 -> 10 -> Outer Space
+17 -> 11 -> Penguin Village
+18 -> 12 -> Hell
+19 -> 13 -> Desert - Noon
+20 -> 14 -> King's Castle
+21 -> 15 -> Muscle Tower
+22 -> 16 -> Mount Paozu
+23 -> 17 -> Wasteland - Evening
+24 -> 18 -> Wasteland - Night
+25 -> 19 -> Rocky Area - Evening
+26 -> 1A -> Rocky Area - Night
+27 -> 1B -> World Tournament Stage - Evening
+28 -> 1C -> Cell Games Arena - Noon
+29 -> 1D -> City Ruins - Evening
+30 -> 1E -> City Ruins - Night
+31 -> 1F -> Desert - Evening
+32 -> 20 -> Desert - Night
+33 -> 21 -> Mountain Road - Evening
+34 -> 22 -> Planet - Evening

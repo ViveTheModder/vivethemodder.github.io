@@ -1,0 +1,351 @@
+DEC    HEX     Z-Item Name
+000 -> 0000 -> Attack Up 1
+001 -> 0100 -> Attack Up 2
+002 -> 0200 -> Attack Up 3
+003 -> 0300 -> Defense Up 1
+004 -> 0400 -> Defense Up 2
+005 -> 0500 -> Defense Up 3
+006 -> 0600 -> Ki Power Up 1
+007 -> 0700 -> Ki Power Up 2
+008 -> 0800 -> Ki Power Up 3
+009 -> 0900 -> Super Up 1
+010 -> 0A00 -> Super Up 2
+011 -> 0B00 -> Super Up 3
+012 -> 0C00 -> Attack Up 2 & Defense Down 1
+013 -> 0D00 -> Defense Up 2 & Attack Down 1
+014 -> 0E00 -> Ki Power Up 2 & Super Down 1
+015 -> 0F00 -> Super Up 2 & Power Down 1
+016 -> 1000 -> Attack Up 3 & Super Down 1
+017 -> 1100 -> Defense Up 3 & Attack Down 2
+018 -> 1200 -> Ki Power Up 3 & Defense Down 1
+019 -> 1300 -> Super Up 3 & Power Down 2
+020 -> 1400 -> Attack Up 3 & Defense Down 2
+021 -> 1500 -> Defense Up 3 & Ki Power Down 1
+022 -> 1600 -> Ki Power Up 3 & Super Down 2
+023 -> 1700 -> Super Up 3 & Attack Down 1
+024 -> 1800 -> Blank 1
+025 -> 1900 -> Blank 2
+026 -> 1A00 -> Blank 3
+027 -> 1B00 -> Blank 4
+028 -> 1C00 -> Blank 5
+029 -> 1D00 -> Blank 6
+030 -> 1E00 -> Blank 7
+031 -> 1F00 -> Blank 8 
+032 -> 2000 -> Blank 9
+033 -> 2100 -> Blank 10
+034 -> 2200 -> Flight
+035 -> 2300 -> Unleash Latent Power 1
+036 -> 2400 -> Unleash Latent Power 2
+037 -> 2500 -> Unleash Latent Power 3
+038 -> 2600 -> Ki Control
+039 -> 2700 -> Dragon Dash Mastery
+040 -> 2800 -> High Spot
+041 -> 2900 -> Essence of Sight
+042 -> 2A00 -> Warrior Lineage
+043 -> 2B00 -> Halo
+044 -> 2C00 -> Demon Seal
+045 -> 2D00 -> Satisfying Blow
+046 -> 2E00 -> Active Heart
+047 -> 2F00 -> Indomitable Fighting Spirit
+048 -> 3000 -> Mind Breaker
+049 -> 3100 -> Gigantic Power
+050 -> 3200 -> Rising Fighting Spirit
+051 -> 3300 -> Secret Measures
+052 -> 3400 -> Proof of Friendship
+053 -> 3500 -> Dende's Healing Ability
+054 -> 3600 -> Eternal Life
+055 -> 3700 -> Tension Up
+056 -> 3800 -> High Tension
+057 -> 3900 -> Water Blessing
+058 -> 3A00 -> Spiritual Control
+059 -> 3B00 -> Lover of Justice
+060 -> 3C00 -> Evil Ambitions
+061 -> 3D00 -> Dragon Heart
+062 -> 3E00 -> Dragon Beat
+063 -> 3F00 -> Dragon Spirit
+064 -> 4000 -> Confidence
+065 -> 4100 -> Battle Control
+066 -> 4200 -> Kibito's Secret Art
+067 -> 4300 -> Persistent Threat
+068 -> 4400 -> Miracle Master
+069 -> 4500 -> Exquisite Skill
+070 -> 4600 -> Quick Return
+071 -> 4700 -> Heavy Pressure
+072 -> 4800 -> Unleash Ki
+073 -> 4900 -> Power of Rage
+074 -> 4A00 -> Dragon Power
+075 -> 4B00 -> Latent Energy!
+076 -> 4C00 -> Fighting Spirit!
+077 -> 4D00 -> Indignation!
+078 -> 4E00 -> Serious!
+079 -> 4F00 -> Hatred of Saiyans
+080 -> 5000 -> Rush Blast 1
+081 -> 5100 -> Rush Blast 2
+082 -> 5200 -> Rush Blast 3
+083 -> 5300 -> Guard Master
+084 -> 5400 -> Mirage
+085 -> 5500 -> Warrior's Will
+086 -> 5600 -> Evil Pride
+087 -> 5700 -> Perfect Guard
+088 -> 5800 -> Sparking Plus
+089 -> 5900 -> Style of the Strong
+090 -> 5A00 -> Emperor's Aura
+091 -> 5B00 -> Miracle Sparking
+092 -> 5C00 -> Savior
+093 -> 5D00 -> Light Body
+094 -> 5E00 -> Power Body
+095 -> 5F00 -> Ultimate Body
+096 -> 6000 -> Draconic Aura
+097 -> 6100 -> Master Strike
+098 -> 6200 -> Master Blast
+099 -> 6300 -> Master Throw
+100 -> 6400 -> Charged Attack
+101 -> 6500 -> Quick Fast Attack
+102 -> 6600 -> Dragon Break
+103 -> 6700 -> Dragon Crush
+104 -> 6800 -> Vanishing Break
+105 -> 6900 -> Vanishing Rush
+106 -> 6A00 -> Combo Master
+107 -> 6B00 -> Quick Charge
+108 -> 6C00 -> Super Senses
+109 -> 6D00 -> Broly's Ring
+110 -> 6E00 -> Namek Power
+111 -> 6F00 -> Earth Power
+112 -> 7000 -> Universal Power
+113 -> 7100 -> Aura Charge Blue
+114 -> 7200 -> Aura Charge Purple
+115 -> 7300 -> Aura Charge Yellow
+116 -> 7400 -> Aura Charge Red
+117 -> 7500 -> Aura Charge Green
+118 -> 7600 -> Aura Charge White
+119 -> 7700 -> Aura Charge Pink
+120 -> 7800 -> Aura Charge Violet
+121 -> 7900 -> Aura Charge Ultimate
+122 -> 7A00 -> Aura Charge Ultimate 3
+123 -> 7B00 -> Aura Charge Ultimate 4
+124 -> 7C00 -> Master Roshi's Training
+125 -> 7D00 -> King Kai's Training
+126 -> 7E00,#18's Kiss
+127 -> 7F00,#17's Scarf
+128 -> 8000 -> Medical Machine
+129 -> 8100 -> Blank 11
+130 -> 8200 -> Blank 12
+131 -> 8300 -> Blank 13
+132 -> 8400 -> Blank 14
+133 -> 8500 -> Blank 15
+134 -> 8600 -> Blank 16
+135 -> 8700 -> Blank 17
+136 -> 8800 -> Launch's Support
+137 -> 8900 -> Goku Type
+138 -> 8A00 -> Vegeta Type
+139 -> 8B00 -> Gohan Type
+140 -> 8C00 -> Trunks Type
+141 -> 8D00 -> Piccolo Type
+142 -> 8E00 -> Krillin Type
+143 -> 8F00 -> Tien Type
+144 -> 9000 -> Chiaotzu Type
+145 -> 9100 -> Yajirobe Type
+146 -> 9200 -> Frieza Type
+147 -> 9300 -> Cell Type
+148 -> 9400 -> Majin Buu Type
+149 -> 9500 -> Broly Type
+150 -> 9600 -> Ginyu Type
+151 -> 9700 -> Recoome Type
+152 -> 9800 -> Blank 18
+153 -> 9900 -> Blank 19
+154 -> 9A00 -> Blank 20
+155 -> 9B00 -> Blank 21
+156 -> 9C00 -> Blank 22
+157 -> 9D00 -> Blank 23
+158 -> 9E00 -> Blank 24
+159 -> 9F00 -> Blank 25
+160 -> A000 -> Blank 26
+161 -> A100 -> Blank 27
+162 -> A200 -> Ultimate Warrior 1
+163 -> A300 -> Ultimate Warrior 2
+164 -> A400 -> Ultimate Warrior 3
+165 -> A500 -> Ultimate Warrior 4
+166 -> A600 -> Ultimate Warrior 5
+167 -> A700 -> Ultimate Warrior 6
+168 -> A800 -> Ultimate Warrior 7
+169 -> A900 -> Ultimate Warrior 8
+170 -> AA00 -> Attack -25
+171 -> AB00 -> Attack -24
+172 -> AC00 -> Attack -23
+173 -> AD00 -> Attack -22
+174 -> AE00 -> Attack -21
+175 -> AF00 -> Attack -20
+176 -> B000 -> Attack -19
+177 -> B100 -> Attack -18
+178 -> B200 -> Attack -17
+179 -> B300 -> Attack -16
+180 -> B400 -> Attack -15
+181 -> B500 -> Attack -14
+182 -> B600 -> Attack -13
+183 -> B700 -> Attack -12
+184 -> B800 -> Attack -11
+185 -> B900 -> Attack -10
+186 -> BA00 -> Attack -9
+187 -> BB00 -> Attack -8
+188 -> BC00 -> Attack -7
+189 -> BD00 -> Attack -6
+190 -> BE00 -> Attack -5
+191 -> BF00 -> Attack -4
+192 -> C000 -> Attack -3
+193 -> C100 -> Attack -2
+194 -> C200 -> Attack -1
+195 -> C300 -> Attack 0
+196 -> C400 -> Attack +1
+197 -> C500 -> Attack +2
+198 -> C600 -> Attack +3
+199 -> C700 -> Attack +4
+200 -> C800 -> Attack +5
+201 -> C900 -> Attack +6
+202 -> CA00 -> Attack +7
+203 -> CB00 -> Attack +8
+204 -> CC00 -> Attack +9
+205 -> CD00 -> Attack +10
+206 -> CE00 -> Attack +11
+207 -> CF00 -> Attack +12
+208 -> D000 -> Attack +13
+209 -> D100 -> Attack +14
+210 -> D200 -> Attack +15
+211 -> D300 -> Attack +16
+212 -> D400 -> Attack +17
+213 -> D500 -> Attack +18
+214 -> D600 -> Attack +19
+215 -> D700 -> Attack +20
+216 -> D800 -> Attack +21
+217 -> D900 -> Attack +22
+218 -> DA00 -> Attack +23
+219 -> DB00 -> Attack +24
+220 -> DC00 -> Attack +25
+221 -> DD00 -> Attack +26
+222 -> DE00 -> Attack +27
+223 -> DF00 -> Attack +28
+224 -> E000 -> Attack +29
+225 -> E100 -> Attack +30
+226 -> E200 -> Attack +31
+227 -> E300 -> Attack +32
+228 -> E400 -> Attack +33
+229 -> E500 -> Attack +34
+230 -> E600 -> Attack +35
+231 -> E700 -> Attack +36
+232 -> E800 -> Attack +37
+233 -> E900 -> Attack +38
+234 -> EA00 -> Attack +39
+235 -> EB00 -> Attack +40
+236 -> EC00 -> Attack +41
+237 -> ED00 -> Attack +42
+238 -> EE00 -> Attack +43
+239 -> EF00 -> Attack +44
+240 -> F000 -> Attack +45
+241 -> F100 -> Attack +46
+242 -> F200 -> Attack +47
+243 -> F300 -> Attack +48
+244 -> F400 -> Attack +49
+245 -> F500 -> Attack +50
+246 -> F600 -> Defense -25
+247 -> F700 -> Defense -24
+248 -> F800 -> Defense -23
+249 -> F900 -> Defense -22
+250 -> FA00 -> Defense -21
+251 -> FB00 -> Defense -20
+252 -> FC00 -> Defense -19
+253 -> FD00 -> Defense -18
+254 -> FE00 -> Defense -17
+255 -> FF00 -> Defense -16
+256 -> 1 -> Defense -15
+257 -> 101 -> Defense -14
+258 -> 201 -> Defense -13
+259 -> 301 -> Defense -12
+260 -> 401 -> Defense -11
+261 -> 501 -> Defense -10
+262 -> 601 -> Defense -9
+263 -> 701 -> Defense -8
+264 -> 801 -> Defense -7
+265 -> 901 -> Defense -6
+266 -> A01 -> Defense -5
+267 -> B01 -> Defense -4
+268 -> C01 -> Defense -3
+269 -> D01 -> Defense -2
+270 -> E01 -> Defense -1
+271 -> F01 -> Defense 0
+272 -> 1001 -> Defense +1
+273 -> 1101 -> Defense +2
+274 -> 1201 -> Defense +3
+275 -> 1301 -> Defense +4
+276 -> 1401 -> Defense +5
+277 -> 1501 -> Defense +6
+278 -> 1601 -> Defense +7
+279 -> 1701 -> Defense +8
+280 -> 1801 -> Defense +9
+281 -> 1901 -> Defense +10
+282 -> 1A01 -> Defense +11
+283 -> 1B01 -> Defense +12
+284 -> 1C01 -> Defense +13
+285 -> 1D01 -> Defense +14
+286 -> 1E01 -> Defense +15
+287 -> 1F01 -> Defense +16
+288 -> 2001 -> Defense +17
+289 -> 2101 -> Defense +18
+290 -> 2201 -> Defense +19
+291 -> 2301 -> Defense +20
+292 -> 2401 -> Defense +21
+293 -> 2501 -> Defense +22
+294 -> 2601 -> Defense +23
+295 -> 2701 -> Defense +24
+296 -> 2801 -> Defense +25
+297 -> 2901 -> Defense +26
+298 -> 2A01 -> Defense +27
+299 -> 2B01 -> Defense +28
+300 -> 2C01 -> Defense +29
+301 -> 2D01 -> Defense +30
+302 -> 2E01 -> Defense +31
+303 -> 2F01 -> Defense +32
+304 -> 3001 -> Defense +33
+305 -> 3101 -> Defense +34
+306 -> 3201 -> Defense +35
+307 -> 3301 -> Defense +36
+308 -> 3401 -> Defense +37
+309 -> 3501 -> Defense +38
+310 -> 3601 -> Defense +39
+311 -> 3701 -> Defense +40
+312 -> 3801 -> Defense +41
+313 -> 3901 -> Defense +42
+314 -> 3A01 -> Defense +43
+315 -> 3B01 -> Defense +44
+316 -> 3C01 -> Defense +45
+317 -> 3D01 -> Defense +46
+318 -> 3E01 -> Defense +47
+319 -> 3F01 -> Defense +48
+320 -> 4001 -> Defense +49
+321 -> 4101 -> Defense +50
+322 -> 4201 -> Strength Enhancement
+323 -> 4301 -> Strength Reduction (-30k)
+324 -> 4401 -> Blast Clash Weakened (Small)
+325 -> 4501 -> Blast Clash Weakened (Medium)
+326 -> 4601 -> Blast Clash Weakened (Large)
+327 -> 4701 -> Absolutely Invincible Body
+328 -> 4801 -> Go To Hell
+329 -> 4901 -> Super Mode
+330 -> 4A01 -> Extreme Hand to Hand
+331 -> 4B01 -> Extreme Energy Blast
+332 -> 4C01 -> Extreme Blast
+333 -> 4D01 -> Extreme Defense
+334 -> 4E01 -> Resistor
+335 -> 4F01 -> Super Regeneration Cells
+336 -> 5001 -> Complete Ki Control
+337 -> 5101 -> God of Battle
+338 -> 5201 -> Fierce God
+339 -> 5301 -> Strength Reduction (-10k)
+340 -> 5401 -> Strength Reduction (-20k)
+341 -> 5501 -> Limitbreaker
+342 -> 5601 -> Inherited Power
+343 -> 5701 -> Blank 28
+344 -> 5801 -> Blank 29
+345 -> 5901 -> Blank 30
+346 -> 5A01 -> Blank 31
+347 -> 5B01 -> Blank 32
+348 -> 5C01 -> Blank 33
+349 -> 5D01 -> Blank 34

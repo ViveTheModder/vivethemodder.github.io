@@ -1,0 +1,162 @@
+DEC    HEX   Character
+000 -> 00 -> Goku (Early)
+001 -> 01 -> Goku (Mid)
+002 -> 02 -> Goku (Mid) - Super Saiyan
+003 -> 03 -> Goku (End)
+004 -> 04 -> Goku (End) - Super Saiyan
+005 -> 05 -> Goku (End) - Super Saiyan 2
+006 -> 06 -> Goku (End) - Super Saiyan 3
+007 -> 07 -> Goku (GT)
+008 -> 08 -> Goku (GT) - Super Saiyan
+009 -> 09 -> Goku (GT) - Super Saiyan 3
+010 -> 0A -> Goku (GT) - Super Saiyan 4
+011 -> 0B -> Kid Goku
+012 -> 0C -> Great Ape
+013 -> 0D -> Kid Gohan
+014 -> 0E -> Teen Gohan
+015 -> 0F -> Teen Gohan - Super Saiyan
+016 -> 10 -> Teen Gohan - Super Saiyan 2
+017 -> 11 -> Adult Gohan
+018 -> 12 -> Adult Gohan - Super Saiyan
+019 -> 13 -> Adult Gohan - Super Saiyan 2
+020 -> 14 -> Great Saiyaman
+021 -> 15 -> Ultimate Gohan
+022 -> 16 -> Piccolo (Early)
+023 -> 17 -> Piccolo (End)
+024 -> 18 -> Nail
+025 -> 19 -> Krillin
+026 -> 1A -> Yamcha
+027 -> 1B -> Tien
+028 -> 1C -> Chiaotzu
+029 -> 1D -> Vegeta (Scouter)
+030 -> 1E -> Great Ape Vegeta
+031 -> 1F -> Vegeta
+032 -> 20 -> Vegeta - Super Saiyan
+033 -> 21 -> Super Vegeta
+034 -> 22 -> Vegeta (second form)
+035 -> 23 -> Vegeta (second form) - Super Saiyan
+036 -> 24 -> Vegeta (second form) - Super Saiyan 2
+037 -> 25 -> Vegeta (End) - Majin
+038 -> 26 -> Vegeta (second form) - Super Saiyan 4
+039 -> 27 -> Trunks (Sword)
+040 -> 28 -> Trunks (Sword) - Super Saiyan
+041 -> 29 -> Trunks
+042 -> 2A -> Trunks - Super Saiyan
+043 -> 2B -> Super Trunks
+044 -> 2C -> Kid Trunks
+045 -> 2D -> Kid Trunks - Super Saiyan
+046 -> 2E -> Goten
+047 -> 2F -> Goten - Super Saiyan
+048 -> 30 -> Gotenks
+049 -> 31 -> Gotenks - Super Saiyan
+050 -> 32 -> Gotenks - Super Saiyan 3
+051 -> 33 -> Vegito
+052 -> 34 -> Super Vegito
+053 -> 35 -> Super Gogeta
+054 -> 36 -> Gogeta - Super Saiyan 4
+055 -> 37 -> Hercule
+056 -> 38 -> Videl
+057 -> 39 -> Great Saiyaman 2
+058 -> 3A -> Supreme Kai
+059 -> 3B -> Kibito Kai
+060 -> 3C -> Yajirobe
+061 -> 3D -> Pikkon
+062 -> 3E -> Tapion
+063 -> 3F -> Pan
+064 -> 40 -> Uub
+065 -> 41 -> Majuub
+066 -> 42 -> Master Roshi
+067 -> 43 -> Master Roshi - MAX Power
+068 -> 44 -> Grandpa Gohan
+069 -> 45 -> Nam
+070 -> 46 -> Android #8
+071 -> 47 -> King Vegeta 
+072 -> 48 -> Great Ape King Vegeta
+073 -> 49 -> Bardock
+074 -> 4A -> Great Ape Bardock
+075 -> 4B -> Fasha
+076 -> 4C -> Great Ape Fasha
+077 -> 4D -> Raditz
+078 -> 4E -> Great Ape Raditz
+079 -> 4F -> Saibamen
+080 -> 50 -> Nappa
+081 -> 51 -> Great Ape Nappa
+082 -> 52 -> Zarbon
+083 -> 53 -> Zarbon - Post-Transformation
+084 -> 54 -> Dodoria
+085 -> 55 -> Cui
+086 -> 56 -> Ginyu
+087 -> 57 -> Recoome
+088 -> 58 -> Burter
+089 -> 59 -> Jeice
+090 -> 5A -> Guldo
+091 -> 5B -> Frieza - 1st Form
+092 -> 5C -> Frieza - 2nd Form
+093 -> 5D -> Frieza - 3rd Form
+094 -> 5E -> Frieza - Final Form
+095 -> 5F -> Frieza - Full Power
+096 -> 60 -> Mecha Frieza
+097 -> 61 -> King Cold
+098 -> 62 -> Appule
+099 -> 63 -> Frieza Soldier
+100 -> 64 -> Android #16
+101 -> 65 -> Android #17
+102 -> 66 -> Android #18
+103 -> 67 -> Android #19
+104 -> 68 -> Dr. Gero
+105 -> 69 -> Cell - 1st Form
+106 -> 6A -> Cell - 2nd Form
+107 -> 6B -> Cell - Perfect Form
+108 -> 6C -> Cell - Perfect
+109 -> 6D -> Cell Jr.
+110 -> 6E -> Babidi
+111 -> 6F -> Demon King Dabura
+112 -> 70 -> Majin Buu
+113 -> 71 -> Majin Buu (Pure Evil)
+114 -> 72 -> Super Buu
+115 -> 73 -> Super Buu - Gotenks Absorbed
+116 -> 74 -> Super Buu - Gohan Absorbed
+117 -> 75 -> Kid Buu
+118 -> 76 -> Garlic Jr.
+119 -> 77 -> Super Garlic Jr.
+120 -> 78 -> Dr. Wheelo
+121 -> 79 -> Turles
+122 -> 7A -> Great Ape Turles
+123 -> 7B -> Slug
+124 -> 7C -> Slug - Giant
+125 -> 7D -> Salza
+126 -> 7E -> Cooler
+127 -> 7F -> Cooler - Final Form
+128 -> 80 -> Meta-Cooler
+129 -> 81 -> Android #13
+130 -> 82 -> Android #13 - Fusion
+131 -> 83 -> Broly
+132 -> 84 -> Broly - Super Saiyan
+133 -> 85 -> Broly - Legendary Super Saiyan
+134 -> 86 -> Zangya
+135 -> 87 -> Bojack
+136 -> 88 -> Bojack - Full Power
+137 -> 89 -> Janemba
+138 -> 8A -> Super Janemba
+139 -> 8B -> Hirudegarn
+140 -> 8C -> Baby Vegeta
+141 -> 8D -> Super Baby 1
+142 -> 8E -> Super Baby 2
+143 -> 8F -> Great Ape Baby
+144 -> 90 -> Super 17
+145 -> 91 -> Nuova Shenron
+146 -> 92 -> Syn Shenron
+147 -> 93 -> Omega Shenron
+148 -> 94 -> General Tao
+149 -> 95 -> Cyborg Tao
+150 -> 96 -> General Blue
+151 -> 97 -> Devilman
+152 -> 98 -> Pilaf Machine
+153 -> 99 -> Pilaf Machine - Fusion
+154 -> 9A -> Tambourine
+155 -> 9B -> Demon King Piccolo
+156 -> 9C -> Arale
+157 -> 9D -> Chi-Chi
+158 -> 9E -> Spopovich
+159 -> 9F -> Future Gohan
+160 -> A0 -> Future Gohan - Super Saiyan

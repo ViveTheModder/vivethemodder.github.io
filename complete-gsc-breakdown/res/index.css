@@ -1,0 +1,106 @@
+/* general styles */
+a:link
+{
+	color: darkturquoise;
+}
+a:visited
+{
+	color: violet;
+}
+body 
+{
+	background-color: rgb(28,29,30);
+	color: rgb(211,211,211);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+code
+{
+    font-size: 1.1em;
+    font-weight: bold;
+}
+div
+{
+    background-color: rgb(56,58,60);
+    border: 1px solid;
+    display: inline-block;
+    padding: 5px;
+}
+div li
+{
+    margin-right: 30px;
+}
+dd li
+{
+    margin-left: 30px;
+}
+dt
+{
+    font-weight: bold;
+}
+embed
+{
+    width: 25%;
+	background-color: white;
+}
+h2, h3
+{
+    color: slategray;
+}
+h2
+{
+    display: inline-block;
+}
+/* colored text */
+.gr
+{
+    color: darkgray;
+}
+.r
+{
+    color: crimson;
+}
+.g
+{
+    color: darkseagreen;
+}
+.b
+{
+    color: royalblue;
+}
+.ch
+{
+    color: chocolate;
+}
+.int, .float
+{
+    color :darkgoldenrod;
+    font-weight: bold;
+    font-family: monospace;
+}
+/* toggle styles */
+.toggleSrc
+{
+    display: none;
+}
+.toggleText, .toggleSrcText
+{
+    cursor: pointer;
+    color:mediumpurple;
+    font-weight: bold;
+}
+.toggleSrcText
+{
+    vertical-align:super;
+}
+.toggleUL
+{
+    display: none;
+    list-style-type: square;
+}
+#title
+{
+    font-weight: bold;
+    position: relative;
+    left: 40%;
+    transform: translate(-50%);
+}
