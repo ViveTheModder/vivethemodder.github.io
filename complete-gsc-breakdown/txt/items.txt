@@ -125,8 +125,8 @@ DEC    HEX     Z-Item Name
 123 -> 7B00 -> Aura Charge Ultimate 4
 124 -> 7C00 -> Master Roshi's Training
 125 -> 7D00 -> King Kai's Training
-126 -> 7E00,#18's Kiss
-127 -> 7F00,#17's Scarf
+126 -> 7E00 -> #18's Kiss
+127 -> 7F00 -> #17's Scarf
 128 -> 8000 -> Medical Machine
 129 -> 8100 -> Blank 11
 130 -> 8200 -> Blank 12
@@ -255,22 +255,22 @@ DEC    HEX     Z-Item Name
 253 -> FD00 -> Defense -18
 254 -> FE00 -> Defense -17
 255 -> FF00 -> Defense -16
-256 -> 1 -> Defense -15
-257 -> 101 -> Defense -14
-258 -> 201 -> Defense -13
-259 -> 301 -> Defense -12
-260 -> 401 -> Defense -11
-261 -> 501 -> Defense -10
-262 -> 601 -> Defense -9
-263 -> 701 -> Defense -8
-264 -> 801 -> Defense -7
-265 -> 901 -> Defense -6
-266 -> A01 -> Defense -5
-267 -> B01 -> Defense -4
-268 -> C01 -> Defense -3
-269 -> D01 -> Defense -2
-270 -> E01 -> Defense -1
-271 -> F01 -> Defense 0
+256 -> 0001 -> Defense -15
+257 -> 0101 -> Defense -14
+258 -> 0201 -> Defense -13
+259 -> 0301 -> Defense -12
+260 -> 0401 -> Defense -11
+261 -> 0501 -> Defense -10
+262 -> 0601 -> Defense -9
+263 -> 0701 -> Defense -8
+264 -> 0801 -> Defense -7
+265 -> 0901 -> Defense -6
+266 -> 0A01 -> Defense -5
+267 -> 0B01 -> Defense -4
+268 -> 0C01 -> Defense -3
+269 -> 0D01 -> Defense -2
+270 -> 0E01 -> Defense -1
+271 -> 0F01 -> Defense 0
 272 -> 1001 -> Defense +1
 273 -> 1101 -> Defense +2
 274 -> 1201 -> Defense +3

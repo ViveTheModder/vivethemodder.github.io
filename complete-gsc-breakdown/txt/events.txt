@@ -7,11 +7,11 @@ DEC   HEX     Event
 05 -> 0500 -> Aerial Clash
 06 -> 0600 -> Aerial Clash
 07 -> 0700 -> Aerial Clash
-08 -> 0800 -> Beam Struggle between Player 1's 1st Blast 2 and COM's 1st Blast 2
-09 -> 0900 -> Beam Struggle between Player 1's 1st Blast 2 and COM's 2nd Blast 2
-10 -> 0A00 -> Beam Struggle between Player 1's 2nd Blast 2 and COM's 1st Blast 2
-11 -> 0B00 -> Beam Struggle between Player 1's 2nd Blast 2 and COM's 2nd Blast 2
-12 -> 0C00 -> Beam Struggle between Player 1 and the COM's Ultimate Blasts
+08 -> 0800 -> Beam Struggle between P1's 1st B2 & COM's 1st B2
+09 -> 0900 -> Beam Struggle between P1's 1st B2 & COM's 2nd B2
+10 -> 0A00 -> Beam Struggle between P1's 2nd B2 & COM's 1st B2
+11 -> 0B00 -> Beam Struggle between P1's 2nd B2 & COM's 2nd B2
+12 -> 0C00 -> Beam Struggle between P1 & COM's Ultimate Blasts
 13 -> 0D00 -> UNKNOWN
 14 -> 0E00 -> UNKNOWN
 15 -> 0F00 -> UNKNOWN
@@ -21,7 +21,7 @@ DEC   HEX     Event
 19 -> 1300 -> Switch with Teammate #4
 20 -> 1400 -> Switch with Teammate #5
 21 -> 1500 -> Assign Transformation
-22 -> 1600 -> Assign Transformation
+22 -> 1600 -> Assign Detransformation
 23 -> 1700 -> Assign Fusion
 24 -> 1800 -> Go to MAX POWER Mode
 25 -> 1900 -> Trigger 1st Blast 1

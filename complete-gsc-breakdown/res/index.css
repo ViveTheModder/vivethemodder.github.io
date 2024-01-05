@@ -7,7 +7,7 @@ body
 {
 	background-color: rgb(28,29,30);
 	color: rgb(211,211,211);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
 }
 code
 {
@@ -21,7 +21,7 @@ div
     display: inline-block;
     padding: 5px;
 }
-embed
+iframe
 {
     width: 25%;
 	background-color: white;
